@@ -36,7 +36,7 @@ public class NFTAssetAmountHolder extends BinderViewHolder<NFTAsset>
     {
         Glide.with(getContext())
                 .load(asset.getThumbnail())
-                .apply(new RequestOptions().placeholder(R.drawable.ic_logo))
+                .apply(new RequestOptions().placeholder(R.drawable.ic_jax_logo))
                 .into(icon);
 
         assetCount.setText(getString(R.string.asset_count_val, asset.getSelectedBalance().toString()));

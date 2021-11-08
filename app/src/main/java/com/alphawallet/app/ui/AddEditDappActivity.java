@@ -67,7 +67,7 @@ public class AddEditDappActivity extends BaseActivity {
                     .load(favicon)
                     .override(42)
                     .apply(new RequestOptions().circleCrop())
-                    .apply(new RequestOptions().placeholder(R.drawable.ic_logo))
+                    .apply(new RequestOptions().placeholder(R.drawable.ic_jax_logo))
                     .into(icon);
         }
 
