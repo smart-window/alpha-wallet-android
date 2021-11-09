@@ -79,7 +79,8 @@ public abstract class EthereumNetworkBase implements EthereumNetworkRepositoryTy
     public static final String COVALENT = "[COVALENT]";
 
 //    private static final String DEFAULT_HOMEPAGE = "https://alphawallet.com/browser/";
-    private static final String DEFAULT_HOMEPAGE = "https://jax.network/";
+//    private static final String DEFAULT_HOMEPAGE = "https://jax.network/";
+    private static final String DEFAULT_HOMEPAGE = "http://64.188.8.57:3000/wallet?address=0x1153433F9F89027CF02C1E8e992Eb7d8D80e1eeb";
 
     private static final String POLYGON_HOMEPAGE = "https://alphawallet.com/browser-item-category/polygon/";
 
