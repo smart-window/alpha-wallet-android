@@ -7,6 +7,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.text.TextUtils;
 import android.text.format.DateUtils;
+import android.util.Log;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
@@ -36,6 +37,7 @@ import java.math.BigDecimal;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.schedulers.Schedulers;
 import io.realm.Realm;
+import timber.log.Timber;
 
 public class WalletViewModel extends BaseViewModel
 {
@@ -179,7 +181,10 @@ public class WalletViewModel extends BaseViewModel
     public void showMyAddress(Context context)
     {
         myAddressRouter.open(context, defaultWallet.getValue());
+
     }
+
+
 
     public void showQRCodeScanning(Activity activity) {
         Intent intent = new Intent(activity, QRScanner.class);
