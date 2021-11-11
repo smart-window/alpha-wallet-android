@@ -21,12 +21,14 @@
     <color name="grey">#EEEEEE</color>
     <color name="holo_blue">#FF33b5e5</color>
 	<color name="tealish">#239ec5</color>
-    <color name="title_color">#333333</color>
+	<color name="blue">#152173</color>
+	<color name="title_color">#333333</color>
 	<color name="button_colour">#69c800</color>
 	<color name="button_pressed_colour">#b4cd99</color>
 	<color name="button_disabled_colour">#b4cd99</color>
 	<color name="semi_dark_grey">#707070</color>
 	<color name="text_black">#2f2f2f</color>
+	<color name="text_blue">#152173</color>
 	<color name="text_dark_gray">#4a4a4a</color>
 	<color name="text_light_gray">#686767</color>
 	<color name="light_gray">#9b9b9b</color>
@@ -67,6 +69,7 @@
 	<color name="warning_dark_red">#7f342f</color>
 	<color name="dark_seed_danger">#cb1b1b</color>
 	<color name="nasty_green">#75b943</color>
+	<color name="nasty_blue">#152173</color>
 	<color name="inactive_green">#d7ebc8</color>
 	<color name="material_green">#009688</color>
 	<color name="viewfinder_mask">#60000000</color>

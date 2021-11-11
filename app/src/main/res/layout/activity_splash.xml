@@ -17,7 +17,7 @@
             android:id="@+id/splash_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/ic_jax_logo"
+            android:background="@drawable/ic_jax_logo_blue"
             android:gravity="center_horizontal"/>
 
         <TextView
@@ -25,7 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="26sp"
-            android:textColor="@color/text_black"
+            android:textColor="@color/text_blue"
             android:gravity="center_horizontal"
             android:text="@string/welcome_to_jaxwallet"/>
 
@@ -45,7 +45,7 @@
             android:id="@+id/button_create"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/nasty_green"
+            android:background="@drawable/background_blue_border_button"
             android:layout_marginBottom="@dimen/create_new_wallet_margin_bottom"
             android:text="@string/create_a_new_wallet"
             android:elevation="2dp"
@@ -67,7 +67,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/already_label_margin_top"
             android:text="@string/already_have_a_wallet"
-            android:textColor="@color/text_dark_gray"
+            android:textColor="@color/text_blue"
             android:textSize="16sp"
             android:layout_gravity="center_horizontal"/>
 
@@ -85,12 +85,12 @@
                 android:layout_height="wrap_content"
                 android:text="@string/watch"
                 android:layout_weight="1.0"
-                android:background="@drawable/background_white_button"
+                android:background="@drawable/background_blue_button"
                 android:elevation="2dp"
                 android:layout_marginEnd="4dp"
                 android:padding="2dp"
                 android:textAllCaps="true"
-                android:textColor="@color/tealish"/>
+                android:textColor="@color/blue"/>
 
             <Button
                 android:id="@+id/button_import"
@@ -98,12 +98,12 @@
                 android:layout_height="wrap_content"
                 android:text="@string/action_import"
                 android:layout_weight="1.0"
-                android:background="@drawable/background_white_button"
+                android:background="@drawable/background_blue_button"
                 android:elevation="2dp"
                 android:layout_marginStart="4dp"
                 android:padding="2dp"
                 android:textAllCaps="true"
-                android:textColor="@color/tealish"/>
+                android:textColor="@color/blue"/>
 
         </LinearLayout>
     </LinearLayout>

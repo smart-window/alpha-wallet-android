@@ -535,7 +535,7 @@
     <string name="import_error">Import Error, Try re-import again.</string>
     <string name="watch_exists">Wallet %1$s already imported with key</string>
 <!--    <string name="welcome_to_alphawallet">Welcome to AlphaWallet</string>-->
-    <string name="welcome_to_jaxwallet" translatable="false">Welcome to J-INR Wallet</string>
+    <string name="welcome_to_jaxwallet" translatable="false">Welcome to Jax.Money Wallet</string>
     <string name="lock_seed_phrase">Lock Seed Phrase</string>
     <string name="no_key">No Key found</string>
     <string name="pending_transaction">Pending Transaction …</string>
