@@ -84,20 +84,20 @@ public class AWalletBottomNavigationView extends LinearLayout {
         selectedItem = index;
         switch (index) {
             case DAPP_BROWSER:
-                dappBrowser.setImageResource(R.drawable.ic_tab_browser_active);
-                dappBrowserLabel.setTextColor(getResources().getColor(R.color.colorHighlight, getContext().getTheme()));
+                dappBrowser.setImageResource(R.drawable.ic_exchange);
+                dappBrowserLabel.setTextColor(getResources().getColor(R.color.blue, getContext().getTheme()));
                 break;
             case WALLET:
-                wallet.setImageResource(R.drawable.ic_tab_wallet_active);
-                walletLabel.setTextColor(getResources().getColor(R.color.colorHighlight, getContext().getTheme()));
+                wallet.setImageResource(R.drawable.ic_wallet);
+                walletLabel.setTextColor(getResources().getColor(R.color.blue, getContext().getTheme()));
                 break;
             case SETTINGS:
-                settings.setImageResource(R.drawable.ic_tab_settings_active);
-                settingsLabel.setTextColor(getResources().getColor(R.color.colorHighlight, getContext().getTheme()));
+                settings.setImageResource(R.drawable.ic_settings);
+                settingsLabel.setTextColor(getResources().getColor(R.color.blue, getContext().getTheme()));
                 break;
             case ACTIVITY:
-                activity.setImageResource(R.drawable.ic_tab_activity_active);
-                activityLabel.setTextColor(getResources().getColor(R.color.colorHighlight, getContext().getTheme()));
+                activity.setImageResource(R.drawable.ic_activity);
+                activityLabel.setTextColor(getResources().getColor(R.color.blue, getContext().getTheme()));
                 break;
         }
     }
@@ -107,15 +107,15 @@ public class AWalletBottomNavigationView extends LinearLayout {
     }
 
     private void deselectAll() {
-        dappBrowser.setImageResource(R.drawable.ic_tab_browser);
-        wallet.setImageResource(R.drawable.ic_tab_wallet);
-        settings.setImageResource(R.drawable.ic_tab_settings);
-        activity.setImageResource(R.drawable.ic_tab_activity);
+        dappBrowser.setImageResource(R.drawable.ic_exchange_inactive);
+        wallet.setImageResource(R.drawable.ic_wallet_inactive);
+        settings.setImageResource(R.drawable.ic_settings_inactive);
+        activity.setImageResource(R.drawable.ic_activity_inactive);
         //reset text colour
-        dappBrowserLabel.setTextColor(getContext().getColor(R.color.dove));
-        walletLabel.setTextColor(getContext().getColor(R.color.dove));
-        settingsLabel.setTextColor(getContext().getColor(R.color.dove));
-        activityLabel.setTextColor(getContext().getColor(R.color.dove));
+        dappBrowserLabel.setTextColor(getContext().getColor(R.color.light_blue));
+        walletLabel.setTextColor(getContext().getColor(R.color.light_blue));
+        settingsLabel.setTextColor(getContext().getColor(R.color.light_blue));
+        activityLabel.setTextColor(getContext().getColor(R.color.light_blue));
     }
 
     public interface OnBottomNavigationItemSelectedListener {

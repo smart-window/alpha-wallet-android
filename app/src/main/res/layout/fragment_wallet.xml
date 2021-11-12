@@ -25,20 +25,20 @@
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tab_layout"
-            style="@style/WalletTabLayoutStyle"
+            style="@style/WalletTabLayoutBlueStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="top"
-            android:background="@drawable/background_tab_layout"
-            android:paddingStart="12dp"
+            android:background="@drawable/background_blue_tab_layout"
+            android:paddingStart="0dp"
             app:layout_scrollFlags="enterAlways"
             app:tabGravity="center"
-            app:tabIndicatorColor="@color/colorHighlight"
+            app:tabIndicatorColor="@color/colorYellowHighlight"
             app:tabIndicatorFullWidth="true"
             app:tabMode="scrollable"
-            app:tabSelectedTextColor="@color/colorHighlight"
+            app:tabSelectedTextColor="@color/colorYellowHighlight"
             app:tabTextAppearance="@style/WalletTabTextAppearance"
-            app:tabTextColor="@color/dove" />
+            app:tabTextColor="@color/white" />
 
         <View
             android:layout_width="match_parent"
@@ -49,7 +49,7 @@
             android:id="@+id/notification"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/background_bottom_border" />
+            android:background="@color/greybg" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -58,7 +58,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginBottom="?actionBarSize"
-        android:background="@color/alabaster"
+        android:background="@color/greybg"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <androidx.recyclerview.widget.RecyclerView

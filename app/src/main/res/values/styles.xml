@@ -98,6 +98,16 @@
         <item name="tabSelectedTextColor">@android:color/white</item>
     </style>
 
+    <style name="WalletTabLayoutBlueStyle" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/colorYellowHighlight</item>
+        <item name="tabIndicatorHeight">3dp</item>
+        <item name="tabPaddingStart">25dp</item>
+        <item name="tabPaddingEnd">25dp</item>
+        <item name="tabBackground">@color/blue</item>
+        <item name="tabTextAppearance">@style/WalletTabTextAppearance</item>
+        <item name="tabSelectedTextColor">@color/blue</item>
+    </style>
+
     <style name="WalletTabTextAppearance" parent="TextAppearance.Design.Tab">
         <item name="android:textSize">15sp</item>
         <item name="android:textColor">@color/colorHighlight</item>

@@ -28,7 +28,7 @@
                 android:id="@+id/nav_wallet"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_tab_wallet" />
+                android:src="@drawable/ic_wallet_inactive" />
 
             <TextView
                 android:id="@+id/nav_wallet_text"
@@ -36,7 +36,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font_semibold"
                 android:text="@string/wallet_label"
-                android:textColor="@color/dove"
+                android:textColor="@color/light_blue"
                 android:textSize="12sp" />
         </LinearLayout>
 
@@ -53,7 +53,7 @@
                 android:id="@+id/nav_activity"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_tab_activity" />
+                android:src="@drawable/ic_activity_inactive" />
 
             <TextView
                 android:id="@+id/nav_activity_text"
@@ -61,7 +61,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font_semibold"
                 android:text="@string/activity_label"
-                android:textColor="@color/dove"
+                android:textColor="@color/light_blue"
                 android:textSize="12sp" />
         </LinearLayout>
 
@@ -78,7 +78,7 @@
                 android:id="@+id/nav_browser"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_tab_browser" />
+                android:src="@drawable/ic_exchange_inactive" />
 
             <TextView
                 android:id="@+id/nav_browser_text"
@@ -86,7 +86,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font_semibold"
                 android:text="@string/browser_label"
-                android:textColor="@color/dove"
+                android:textColor="@color/light_blue"
                 android:textSize="12sp" />
         </LinearLayout>
 
@@ -104,7 +104,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:src="@drawable/ic_tab_settings" />
+                android:src="@drawable/ic_settings_inactive" />
 
             <TextView
                 android:id="@+id/nav_settings_text"
@@ -115,7 +115,7 @@
                 android:fontFamily="@font/font_semibold"
                 android:lineSpacingExtra="8sp"
                 android:text="@string/settings_label"
-                android:textColor="@color/dove"
+                android:textColor="@color/light_blue"
                 android:textSize="12sp" />
 
             <LinearLayout
