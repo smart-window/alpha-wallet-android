@@ -54,6 +54,7 @@
 
     <style name="AppTheme.WhiteToolbar" parent="ThemeOverlay.AppCompat.ActionBar">
         <item name="colorControlNormal">@color/text_black</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_back_button</item>
     </style>
 
     <style name="TokenInfoTabLayoutStyle" parent="Widget.Design.TabLayout">

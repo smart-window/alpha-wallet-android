@@ -23,7 +23,7 @@
             android:paddingEnd="50dp"
             android:text="@string/backup_seed_phrase"
             android:textAlignment="center"
-            android:textColor="@color/black"
+            android:textColor="@color/blue"
             android:textSize="28sp" />
 
         <ImageView
@@ -50,7 +50,7 @@
             android:paddingEnd="50dp"
             android:text="@string/backup_seed_phrase_detail"
             android:textAlignment="center"
-            android:textColor="@color/black"
+            android:textColor="@color/blue"
             android:textSize="17sp" />
 
         <com.alphawallet.app.widget.FunctionButtonBar
