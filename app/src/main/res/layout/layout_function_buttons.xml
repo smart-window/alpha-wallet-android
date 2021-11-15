@@ -51,7 +51,7 @@
             android:layout_marginLeft="4dp"
             android:layout_marginRight="4dp"
             android:layout_weight="0.5"
-            android:background="@drawable/selector_round_button"
+            android:background="@drawable/background_blue_border_button"
             android:ellipsize="end"
             android:fontFamily="@font/font_semibold"
             android:lines="1"
@@ -70,13 +70,13 @@
             android:layout_marginLeft="4dp"
             android:layout_marginRight="4dp"
             android:layout_weight="0.5"
-            android:background="@drawable/selector_round_button_secondary"
+            android:background="@drawable/background_blue_button"
             android:ellipsize="end"
             android:fontFamily="@font/font_semibold"
             android:lines="1"
             tools:text="Secondary"
             android:textAllCaps="false"
-            android:textColor="@drawable/selector_button_text_secondary"
+            android:textColor="@color/blue"
             android:textSize="17sp"
             android:visibility="gone" />
 
@@ -87,10 +87,10 @@
             android:layout_marginLeft="4dp"
             android:layout_marginRight="4dp"
             android:layout_weight="0.2"
-            android:background="@drawable/selector_round_button_secondary"
-            android:drawableTint="@color/azure"
+            android:background="@drawable/background_blue_button"
+            android:drawableTint="@color/blue"
             android:gravity="center"
-            android:src="@drawable/ic_menu_azure"
+            android:src="@drawable/ic_more_button"
             app:tint="@drawable/selector_button_text_secondary"
             android:visibility="gone" />
     </LinearLayout>
