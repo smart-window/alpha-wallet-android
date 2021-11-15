@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/font_regular"
             android:text="Setting Title"
-            android:textColor="@color/black"
+            android:textColor="@color/blue"
             android:textSize="17sp" />
 
         <TextView
@@ -44,7 +44,7 @@
             android:lines="1"
             android:maxLines="1"
             android:text="Setting Subtitle"
-            android:textColor="@color/dove"
+            android:textColor="@color/sub_blue"
             android:textSize="12sp"
             android:visibility="gone" />
     </LinearLayout>
@@ -62,7 +62,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="12dp"
-            android:src="@drawable/ic_arrow_right"
+            android:src="@drawable/ic_right_arrow"
             android:visibility="gone" />
 
         <com.google.android.material.switchmaterial.SwitchMaterial
@@ -72,7 +72,7 @@
             android:layout_marginEnd="16dp"
             android:clickable="false"
             android:focusable="false"
-            android:theme="@style/SettingsItemSwitchAppearance"
+            android:theme="@style/SettingsItemSwitchAppearanceBlue"
             android:visibility="gone" />
     </LinearLayout>
 

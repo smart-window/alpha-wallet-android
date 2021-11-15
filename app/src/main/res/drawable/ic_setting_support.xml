@@ -10,28 +10,32 @@
       android:strokeColor="#152172"/>
   <group>
     <clip-path
-        android:pathData="M8,10h17.26v14h-17.26z"/>
+        android:pathData="M9,9h14v14h-14z"/>
     <path
         android:strokeWidth="1"
-        android:pathData="M8.5,13.87C9.5671,12.8014 10.8345,11.9537 12.2295,11.3754C13.6245,10.797 15.1198,10.4993 16.63,10.4993C18.1402,10.4993 19.6355,10.797 21.0305,11.3754C22.4255,11.9537 23.6929,12.8014 24.76,13.87"
+        android:pathData="M12.5815,21.7692L9.2915,22.7083L10.3357,19.5817C9.65,18.5132 9.2874,17.2695 9.2915,16C9.2902,14.5184 9.7789,13.0779 10.6816,11.9031C11.5843,10.7282 12.8502,9.8849 14.2822,9.5046C15.7142,9.1243 17.2317,9.2283 18.5984,9.8004C19.9651,10.3725 21.1042,11.3807 21.8381,12.6677C22.5721,13.9547 22.8597,15.4484 22.6562,16.916C22.4527,18.3835 21.7695,19.7426 20.713,20.7813C19.6566,21.8201 18.2862,22.4803 16.8154,22.6589C15.3446,22.8376 13.856,22.5248 12.5815,21.7692Z"
+        android:strokeLineJoin="round"
         android:fillColor="#00000000"
         android:strokeColor="#152172"
         android:strokeLineCap="round"/>
     <path
         android:strokeWidth="1"
-        android:pathData="M22.6299,16C21.0367,14.4123 18.8791,13.5208 16.6299,13.5208C14.3806,13.5208 12.2231,14.4123 10.6299,16"
+        android:pathData="M12.7915,14.5417H19.2082"
+        android:strokeLineJoin="round"
         android:fillColor="#00000000"
         android:strokeColor="#152172"
         android:strokeLineCap="round"/>
     <path
         android:strokeWidth="1"
-        android:pathData="M20.5202,18.11C20.0095,17.599 19.4031,17.1937 18.7356,16.9171C18.0681,16.6406 17.3527,16.4982 16.6302,16.4982C15.9077,16.4982 15.1923,16.6406 14.5249,16.9171C13.8574,17.1937 13.251,17.599 12.7402,18.11"
+        android:pathData="M12.7915,16.2917H19.2082"
+        android:strokeLineJoin="round"
         android:fillColor="#00000000"
         android:strokeColor="#152172"
         android:strokeLineCap="round"/>
     <path
         android:strokeWidth="1"
-        android:pathData="M16.6299,23.5C17.4583,23.5 18.1299,22.8284 18.1299,22C18.1299,21.1716 17.4583,20.5 16.6299,20.5C15.8015,20.5 15.1299,21.1716 15.1299,22C15.1299,22.8284 15.8015,23.5 16.6299,23.5Z"
+        android:pathData="M12.7915,18.0417H19.2082"
+        android:strokeLineJoin="round"
         android:fillColor="#00000000"
         android:strokeColor="#152172"
         android:strokeLineCap="round"/>

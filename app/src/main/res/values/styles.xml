@@ -120,6 +120,11 @@
         <item name="colorSwitchThumbNormal">@color/dusty</item>
     </style>
 
+    <style name="SettingsItemSwitchAppearanceBlue" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">#152172</item>
+        <item name="colorSwitchThumbNormal">#4C79CB</item>
+    </style>
+
     <style name="MyAddressCopyTextStyle">
         <item name="android:paddingTop">@dimen/dp15</item>
         <item name="android:paddingBottom">@dimen/dp15</item>

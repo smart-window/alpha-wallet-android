@@ -153,33 +153,33 @@ public class NewSettingsFragment extends BaseFragment {
 
         myAddressSetting =
                 new SettingsItemView.Builder(getContext())
-                        .withIcon(R.drawable.ic_settings_wallet_address)
+                        .withIcon(R.drawable.ic_wallet_address)
                         .withTitle(R.string.title_show_wallet_address)
                         .withListener(this::onShowWalletAddressSettingClicked)
                         .build();
 
         changeWalletSetting =
                 new SettingsItemView.Builder(getContext())
-                        .withIcon(R.drawable.ic_settings_change_wallet)
+                        .withIcon(R.drawable.ic_add_wallet)
                         .withTitle(R.string.title_change_add_wallet)
                         .withListener(this::onChangeWalletSettingClicked)
                         .build();
 
         backUpWalletSetting =
                 new SettingsItemView.Builder(getContext())
-                        .withIcon(R.drawable.ic_settings_backup)
+                        .withIcon(R.drawable.ic_backup_wallet)
                         .withTitle(R.string.title_back_up_wallet)
                         .withListener(this::onBackUpWalletSettingClicked)
                         .build();
 
         showSeedPhrase = new SettingsItemView.Builder(getContext())
-                .withIcon(R.drawable.ic_settings_show_seed)
+                .withIcon(R.drawable.ic_seed)
                 .withTitle(R.string.show_seed_phrase)
                 .withListener(this::onShowSeedPhrase) //onShow
                 .build();
 
         nameThisWallet = new SettingsItemView.Builder(getContext())
-                .withIcon(R.drawable.ic_settings_name_this_wallet)
+                .withIcon(R.drawable.ic_name_wallet)
                 .withTitle(R.string.name_this_wallet)
                 .withListener(this::onNameThisWallet)
                 .build();
@@ -194,7 +194,7 @@ public class NewSettingsFragment extends BaseFragment {
         notificationsSetting =
                 new SettingsItemView.Builder(getContext())
                         .withType(SettingsItemView.Type.TOGGLE)
-                        .withIcon(R.drawable.ic_settings_notifications)
+                        .withIcon(R.drawable.ic_notification)
                         .withTitle(R.string.title_notifications)
                         .withListener(this::onNotificationsSettingClicked)
                         .build();
@@ -209,21 +209,21 @@ public class NewSettingsFragment extends BaseFragment {
 
         selectNetworksSetting =
                 new SettingsItemView.Builder(getContext())
-                        .withIcon(R.drawable.ic_settings_networks)
+                        .withIcon(R.drawable.ic_active_networks)
                         .withTitle(R.string.select_active_networks)
                         .withListener(this::onSelectNetworksSettingClicked)
                         .build();
 
         advancedSetting =
                 new SettingsItemView.Builder(getContext())
-                        .withIcon(R.drawable.ic_settings_advanced)
+                        .withIcon(R.drawable.ic_advanced)
                         .withTitle(R.string.title_advanced)
                         .withListener(this::onAdvancedSettingClicked)
                         .build();
 
         supportSetting =
                 new SettingsItemView.Builder(getContext())
-                        .withIcon(R.drawable.ic_settings_support)
+                        .withIcon(R.drawable.ic_setting_support)
                         .withTitle(R.string.title_support)
                         .withListener(this::onSupportSettingClicked)
                         .build();

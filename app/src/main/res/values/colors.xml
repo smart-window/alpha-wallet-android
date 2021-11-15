@@ -66,7 +66,7 @@
 	<color name="disabled_color">#888888</color>
 	<color name="cancel_red">#db393a</color>
 	<color name="dark_yellow">#e1b706</color>
-	<color name="warning_red">#c34840</color>
+	<color name="warning_red">#FE4443</color>
 	<color name="warning_dark_red">#7f342f</color>
 	<color name="dark_seed_danger">#cb1b1b</color>
 	<color name="nasty_green">#75b943</color>
@@ -112,6 +112,7 @@
 	<color name="black">#000000</color>
 	<color name="mine">#2f2f2f</color>
 	<color name="dove">#727272</color>
+	<color name="sub_blue">#808392</color>
 	<color name="light_blue">#898DB4</color>
 	<color name="dove_hint">#66727272</color>
 	<color name="dusty">#999999</color>
