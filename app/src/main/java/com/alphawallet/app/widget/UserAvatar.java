@@ -158,7 +158,7 @@ public class UserAvatar extends LinearLayout
         if (address.equalsIgnoreCase(ZERO_ADDRESS)) return;
         image.setVisibility(View.VISIBLE);
         webLayout.setVisibility(View.GONE);
-        image.setImageBitmap(Blockies.createIcon(address.toLowerCase()));
+//        image.setImageBitmap(Blockies.createIcon(address.toLowerCase()));
     }
 
     private void loadAvatar(String iconUrl, AvatarWriteCallback avCallback, Wallet wallet, boolean alwaysLoad)

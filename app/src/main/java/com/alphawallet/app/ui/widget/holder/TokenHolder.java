@@ -373,7 +373,7 @@ public class TokenHolder extends BinderViewHolder<TokenCardMeta> implements View
         lbl = getString(R.string.token_balance, "", formattedValue);
         lbl += " " + ticker.priceSymbol;
         textAppreciation.setText(lbl);
-        textAppreciation.setTextColor(getContext().getColor(R.color.text_dark_gray));
+        textAppreciation.setTextColor(getContext().getColor(R.color.blue));
 
         tokensService.addTokenValue(token.tokenInfo.chainId, token.getAddress(), fiatBalance.floatValue());
     }
