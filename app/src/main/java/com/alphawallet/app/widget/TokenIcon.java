@@ -7,6 +7,7 @@ import android.os.Handler;
 import android.os.Looper;
 import android.text.TextUtils;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
@@ -152,7 +153,14 @@ public class TokenIcon extends ConstraintLayout
         }
         else
         {
-            setupTextIcon(token, loadFailed);
+            if (token.tokenInfo.address.equals("0xca1262e77fb25c0a4112cfc9bad3ff54f617f2e6")) {
+                textIcon.setVisibility(View.GONE);
+                icon.setImageResource(R.drawable.jaxnet_circle);
+                icon.setVisibility(View.VISIBLE);
+                findViewById(R.id.circle).setVisibility(View.VISIBLE);
+            } else {
+                setupTextIcon(token, loadFailed);
+            }
         }
     }
 
