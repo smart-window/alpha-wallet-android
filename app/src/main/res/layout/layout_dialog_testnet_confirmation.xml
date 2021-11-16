@@ -24,7 +24,7 @@
             android:text="@string/title_dialog_what_testnet"
             android:layout_marginTop="@dimen/dp16"
             android:layout_marginBottom="@dimen/dp16"
-            android:textColor="@color/text_black"
+            android:textColor="@color/blue"
             android:textSize="24sp" />
 
     </RelativeLayout>
@@ -39,7 +39,7 @@
         android:gravity="center_vertical"
         android:lineSpacingExtra="@dimen/dp5"
         android:text="@string/message_dialog_testnet"
-        android:textColor="@color/black"
+        android:textColor="@color/blue"
         android:textSize="17sp" />
 
     <Button
@@ -47,7 +47,7 @@
         style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/selector_round_button"
+        android:background="@drawable/background_blue_border_button"
         android:fontFamily="@font/font_semibold"
         android:gravity="center"
         android:text="@string/action_enable_testnet"
