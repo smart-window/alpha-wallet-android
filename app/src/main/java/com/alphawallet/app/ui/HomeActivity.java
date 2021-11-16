@@ -7,6 +7,7 @@ import static com.alphawallet.app.C.CHANGE_CURRENCY;
 import static com.alphawallet.app.C.RESET_TOOLBAR;
 import static com.alphawallet.app.C.RESET_WALLET;
 import static com.alphawallet.app.entity.WalletPage.ACTIVITY;
+import static com.alphawallet.app.entity.WalletPage.SWAP;
 import static com.alphawallet.app.entity.WalletPage.DAPP_BROWSER;
 import static com.alphawallet.app.entity.WalletPage.SETTINGS;
 import static com.alphawallet.app.entity.WalletPage.WALLET;
@@ -80,7 +81,6 @@ import com.alphawallet.app.widget.AWalletConfirmationDialog;
 import com.alphawallet.app.widget.SignTransactionDialog;
 import com.alphawallet.token.entity.SalesOrderMalformed;
 import com.alphawallet.token.tools.ParseMagicLink;
-import com.bumptech.glide.Glide;
 import com.github.florent37.tutoshowcase.TutoShowcase;
 
 import net.yslibrary.android.keyboardvisibilityevent.KeyboardVisibilityEvent;
@@ -113,6 +113,7 @@ public class HomeActivity extends BaseNavigationActivity implements View.OnClick
     private final Fragment dappBrowserFragment;
     private final Fragment walletFragment;
     private final Fragment activityFragment;
+    private final Fragment swapFragment;
     private String walletTitle;
     private static boolean updatePrompt = false;
     private TutoShowcase backupWalletDialog;
@@ -134,6 +135,7 @@ public class HomeActivity extends BaseNavigationActivity implements View.OnClick
         settingsFragment = new NewSettingsFragment();
         walletFragment = new WalletFragment();
         activityFragment = new ActivityFragment();
+        swapFragment = new SwapFragment();
         pagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager());
     }
 
@@ -550,6 +552,11 @@ public class HomeActivity extends BaseNavigationActivity implements View.OnClick
                 showPage(ACTIVITY);
                 return true;
             }
+            case SWAP:
+            {
+                showPage(SWAP);
+                return true;
+            }
         }
         return false;
     }
@@ -637,6 +644,16 @@ public class HomeActivity extends BaseNavigationActivity implements View.OnClick
                 viewPager.setCurrentItem(ACTIVITY.ordinal());
                 setTitle(getString(R.string.activity_label));
                 selectNavigationItem(ACTIVITY);
+                enableDisplayHomeAsHome(false);
+                invalidateOptionsMenu();
+                break;
+            }
+            case SWAP:
+            {
+                showToolbar();
+                viewPager.setCurrentItem(SWAP.ordinal());
+                setTitle(getString(R.string.swap_label));
+                selectNavigationItem(SWAP);
                 enableDisplayHomeAsHome(false);
                 invalidateOptionsMenu();
                 break;
@@ -827,6 +844,8 @@ public class HomeActivity extends BaseNavigationActivity implements View.OnClick
                 return settingsFragment;
             case ACTIVITY:
                 return activityFragment;
+            case SWAP:
+                return swapFragment;
             default:
                 return walletFragment;
         }

@@ -15,17 +15,20 @@ import java.util.ArrayList;
 
 import static com.alphawallet.app.entity.WalletPage.ACTIVITY;
 import static com.alphawallet.app.entity.WalletPage.DAPP_BROWSER;
+import static com.alphawallet.app.entity.WalletPage.SWAP;
 import static com.alphawallet.app.entity.WalletPage.SETTINGS;
 import static com.alphawallet.app.entity.WalletPage.WALLET;
 
 public class AWalletBottomNavigationView extends LinearLayout {
 
     private final ImageView dappBrowser;
+    private final ImageView swap;
     private final ImageView wallet;
     private final ImageView settings;
     private final ImageView activity;
 
     private final TextView dappBrowserLabel;
+    private final TextView swapLabel;
     private final TextView walletLabel;
     private final TextView settingsLabel;
     private final TextView settingsBadge;
@@ -41,11 +44,13 @@ public class AWalletBottomNavigationView extends LinearLayout {
         super(context, attrs);
         inflate(context, R.layout.layout_bottom_navigation, this);
         dappBrowser = findViewById(R.id.nav_browser);
+        swap = findViewById(R.id.nav_swap);
         wallet = findViewById(R.id.nav_wallet);
         settings = findViewById(R.id.nav_settings);
         activity = findViewById(R.id.nav_activity);
 
         dappBrowserLabel = findViewById(R.id.nav_browser_text);
+        swapLabel = findViewById(R.id.nav_swap_text);
         walletLabel = findViewById(R.id.nav_wallet_text);
         settingsLabel = findViewById(R.id.nav_settings_text);
         settingsBadge = findViewById(R.id.settings_badge);
@@ -54,15 +59,18 @@ public class AWalletBottomNavigationView extends LinearLayout {
         //TODO: Refactor with click overlay
         findViewById(R.id.wallet_tab).setOnClickListener(v -> selectItem(WALLET));
         findViewById(R.id.browser_tab).setOnClickListener(v -> selectItem(DAPP_BROWSER));
+        findViewById(R.id.swap_tab).setOnClickListener(v -> selectItem(SWAP));
         findViewById(R.id.settings_tab).setOnClickListener(v -> selectItem(SETTINGS));
         findViewById(R.id.activity_tab).setOnClickListener(v -> selectItem(ACTIVITY));
 
         dappBrowser.setOnClickListener(v -> selectItem(DAPP_BROWSER));
+        swap.setOnClickListener(v -> selectItem(SWAP));
         wallet.setOnClickListener(v -> selectItem(WALLET));
         settings.setOnClickListener(v -> selectItem(SETTINGS));
         activity.setOnClickListener(v -> selectItem(ACTIVITY));
 
         dappBrowserLabel.setOnClickListener(v -> selectItem(DAPP_BROWSER));
+        swapLabel.setOnClickListener(v -> selectItem(SWAP));
         walletLabel.setOnClickListener(v -> selectItem(WALLET));
         settingsLabel.setOnClickListener(v -> selectItem(SETTINGS));
         activityLabel.setOnClickListener(v -> selectItem(ACTIVITY));
@@ -87,6 +95,10 @@ public class AWalletBottomNavigationView extends LinearLayout {
                 dappBrowser.setImageResource(R.drawable.ic_exchange);
                 dappBrowserLabel.setTextColor(getResources().getColor(R.color.blue, getContext().getTheme()));
                 break;
+            case SWAP:
+                swap.setImageResource(R.drawable.ic_exchange);
+                swapLabel.setTextColor(getResources().getColor(R.color.blue, getContext().getTheme()));
+                break;
             case WALLET:
                 wallet.setImageResource(R.drawable.ic_wallet);
                 walletLabel.setTextColor(getResources().getColor(R.color.blue, getContext().getTheme()));
@@ -108,11 +120,13 @@ public class AWalletBottomNavigationView extends LinearLayout {
 
     private void deselectAll() {
         dappBrowser.setImageResource(R.drawable.ic_exchange_inactive);
+        swap.setImageResource(R.drawable.ic_exchange_inactive);
         wallet.setImageResource(R.drawable.ic_wallet_inactive);
         settings.setImageResource(R.drawable.ic_settings_inactive);
         activity.setImageResource(R.drawable.ic_activity_inactive);
         //reset text colour
         dappBrowserLabel.setTextColor(getContext().getColor(R.color.light_blue));
+        swapLabel.setTextColor(getContext().getColor(R.color.light_blue));
         walletLabel.setTextColor(getContext().getColor(R.color.light_blue));
         settingsLabel.setTextColor(getContext().getColor(R.color.light_blue));
         activityLabel.setTextColor(getContext().getColor(R.color.light_blue));
