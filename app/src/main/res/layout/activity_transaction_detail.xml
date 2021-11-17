@@ -107,8 +107,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 custom:gravity="start"
-                custom:bold="false"
-                custom:textColor="@color/mine"
+                custom:bold="true"
+                custom:textColor="@color/blue"
                 custom:marginRight="@dimen/dp18" />
 
             <TextView
@@ -153,7 +153,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 custom:gravity="start"
-                custom:bold="false"
+                custom:bold="true"
                 custom:textColor="@color/mine"
                 custom:marginRight="@dimen/dp18" />
 
@@ -169,7 +169,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 custom:gravity="start"
-                custom:bold="false"
+                custom:bold="true"
                 custom:textColor="@color/mine"
                 custom:marginRight="@dimen/dp18" />
 

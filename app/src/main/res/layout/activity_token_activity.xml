@@ -58,7 +58,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/font_regular"
                     tools:text="Sent"
-                    android:textColor="@color/black"
+                    android:textColor="@color/blue"
                     android:textSize="@dimen/sp17" />
 
                 <TextView
@@ -68,7 +68,7 @@
                     android:fontFamily="@font/font_semibold"
                     android:layout_marginStart="4dp"
                     tools:text="ETH"
-                    android:textColor="@color/black"
+                    android:textColor="@color/blue"
                     android:textSize="@dimen/sp20" />
 
                 </LinearLayout>
@@ -81,7 +81,7 @@
                     tools:text="+ 1.234 ETH"
                     android:layout_gravity="center_horizontal"
                     android:gravity="center_horizontal"
-                    android:textColor="@color/black"
+                    android:textColor="@color/blue"
                     android:layout_marginTop="@dimen/dp16"
                     android:textSize="@dimen/sp24" />
 

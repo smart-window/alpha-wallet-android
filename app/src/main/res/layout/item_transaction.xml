@@ -37,7 +37,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font_regular"
-                android:textColor="@color/text_dark_gray"
+                android:textColor="@color/blue"
                 android:maxLines="2"
                 android:textAppearance="?attr/textAppearanceListItem"
                 android:textSize="@dimen/sp17"
@@ -71,7 +71,7 @@
             android:layout_alignParentEnd="true"
             android:fontFamily="@font/font_semibold"
             android:layout_centerVertical="true"
-            android:textColor="@color/black"
+            android:textColor="@color/blue"
             android:textSize="17sp"
             tools:text="+ 70,000,000,000.3455 ETH" />
 
@@ -86,7 +86,7 @@
             android:fontFamily="@font/font_regular"
             android:maxLines="1"
             android:textAppearance="?attr/textAppearanceListItem"
-            android:textColor="@color/text_dark_gray"
+            android:textColor="@color/blue"
             android:textSize="12sp"
             android:visibility="visible"
             tools:text="+1.0 ETH" />
@@ -102,7 +102,7 @@
                 android:ellipsize="end"
                 android:fontFamily="@font/font_light"
                 tools:text="0x123456778 ... 3434"
-                android:textColor="@color/dove"
+                android:textColor="@color/blue"
                 android:textSize="@dimen/sp12" />
 
         <TextView
@@ -113,7 +113,7 @@
             android:layout_alignParentEnd="true"
             android:visibility="visible"
             android:fontFamily="@font/font_regular"
-            android:textColor="@color/dove"
+            android:textColor="@color/blue"
             android:layout_gravity="center_vertical"
             android:maxLines="1"
             tools:text="11:53 pm"
