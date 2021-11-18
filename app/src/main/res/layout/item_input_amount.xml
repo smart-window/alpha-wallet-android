@@ -28,7 +28,7 @@
             android:paddingEnd="16dp"
             android:text="@string/amount"
             android:textAllCaps="true"
-            android:textColor="@color/dove"
+            android:textColor="@color/blue"
             android:textSize="15sp" />
 
 
@@ -83,7 +83,7 @@
                 android:layout_height="wrap_content"
                 android:textAllCaps="true"
                 android:fontFamily="@font/font_regular"
-                android:textColor="@color/black"
+                android:textColor="@color/blue"
                 android:textSize="@dimen/sp32"
                 tools:text="ETH"/>
 
@@ -123,8 +123,8 @@
                 android:maxLines="1"
                 android:paddingEnd="@dimen/dp5"
                 android:paddingStart="@dimen/dp5"
-                android:textColor="@color/text_dark_gray"
-                android:textColorHint="@color/light_gray"
+                android:textColor="@color/blue"
+                android:textColorHint="@color/light_blue"
                 android:textSize="36sp" />
 
         </LinearLayout>
@@ -139,7 +139,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="12sp"
-                android:textColor="@color/dove"
+                android:textColor="@color/light_blue"
                 android:text="@string/available" />
 
             <TextView
@@ -155,7 +155,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="3dp"
                 android:textSize="12sp"
-                android:textColor="@color/dove"
+                android:textColor="@color/light_blue"
                 tools:text="4.4328"/>
 
             <TextView
@@ -164,7 +164,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="3dp"
                 android:textSize="12sp"
-                android:textColor="@color/dove"
+                android:textColor="@color/light_blue"
                 tools:text="ETH"/>
 
             <TextView
@@ -184,7 +184,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="end"
                 android:fontFamily="@font/font_semibold"
-                android:textColor="@color/azure"
+                android:textColor="@color/blue"
                 android:textSize="@dimen/sp17"
                 android:text="@string/all_funds"
                 android:lines="1"

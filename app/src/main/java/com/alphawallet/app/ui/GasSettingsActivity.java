@@ -613,7 +613,7 @@ public class GasSettingsActivity extends BaseActivity implements GasSettingsCall
         warningType = Warning.OFF;
 
         EditText gas_price_entry = findViewById(R.id.gas_price_entry);
-        gas_price_entry.setTextColor(getColor(R.color.dove));
+        gas_price_entry.setTextColor(getColor(R.color.blue));
         gas_price_entry.setBackground(AppCompatResources.getDrawable(this, R.drawable.background_password_entry));
     }
 

@@ -21,7 +21,7 @@
         android:paddingEnd="16dp"
         tools:text="@string/recipient"
         android:textAllCaps="true"
-        android:textColor="@color/dove"
+        android:textColor="@color/blue"
         android:textSize="15sp" />
 
     <View
