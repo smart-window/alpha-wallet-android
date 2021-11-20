@@ -32,7 +32,7 @@
             android:fontFamily="@font/font_light"
             android:gravity="center"
             android:singleLine="true"
-            android:textColor="@color/toolbar_text_color"
+            android:textColor="@color/white"
             android:textSize="20sp" />
 
         <LinearLayout

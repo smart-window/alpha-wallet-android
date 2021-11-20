@@ -30,7 +30,7 @@
             android:fontFamily="@font/font_regular"
             android:gravity="start"
             android:text="@string/title_transaction_details"
-            android:textColor="@color/dove"
+            android:textColor="@color/light_blue"
             android:textSize="@dimen/sp13" />
 
         <TextView
@@ -38,7 +38,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="3.1"
-            android:textColor="@color/black"
+            android:textColor="@color/blue"
             android:fontFamily="@font/font_semibold"
             android:gravity="start"
             tools:text="Destination: 0xabcdef"

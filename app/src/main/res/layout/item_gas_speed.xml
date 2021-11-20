@@ -45,7 +45,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/font_bold"
-            android:textColor="@color/black"
+            android:textColor="@color/blue"
             android:textSize="@dimen/sp20"
             tools:text="Average" />
 
@@ -61,7 +61,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font_semibold"
                 android:layout_marginEnd="3dp"
-                android:textColor="@color/mine"
+                android:textColor="@color/blue"
                 android:textSize="@dimen/sp15"
                 android:lineSpacingExtra="7sp"
                 tools:text="$0.55" />
@@ -71,7 +71,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font_regular"
-                android:textColor="@color/dove"
+                android:textColor="@color/light_blue"
                 android:textSize="@dimen/sp15"
                 tools:text="(0.00362 ETH)" />
 
@@ -83,7 +83,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/font_regular"
             android:layout_marginTop="3dp"
-            android:textColor="@color/dove"
+            android:textColor="@color/light_blue"
             android:textSize="@dimen/sp13"
             tools:text="Gas Price: 45" />
     </LinearLayout>
@@ -101,7 +101,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/font_regular"
-            android:textColor="@color/mine"
+            android:textColor="@color/blue"
             android:textSize="@dimen/sp17"
             android:layout_gravity="center_vertical"
             android:layout_marginEnd="8dp"

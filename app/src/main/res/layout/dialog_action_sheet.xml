@@ -13,14 +13,14 @@
 
         <ImageView
             android:id="@+id/image_close"
-            android:contentDescription="@string/action_close"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/dp16"
-            android:padding="5dp"
             android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp16"
             android:background="@color/transparent"
-            android:src="@drawable/ic_close" />
+            android:contentDescription="@string/action_close"
+            android:padding="5dp"
+            android:src="@drawable/ic_close_button" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -28,7 +28,7 @@
             android:layout_toEndOf="@id/image_close"
             android:layout_toStartOf="@id/logo"
             android:text="@string/confirm_transaction"
-            android:textColor="@color/black"
+            android:textColor="@color/blue"
             android:fontFamily="@font/font_semibold"
             android:layout_centerVertical="true"
             android:gravity="center_horizontal"
@@ -38,13 +38,13 @@
 
         <ImageView
             android:id="@+id/logo"
-            android:contentDescription="@string/app_name"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/ic_launcher_foreground"
-            android:layout_marginEnd="10dp"
+            android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
-            android:layout_alignParentEnd="true" />
+            android:layout_marginEnd="10dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_jax_logo" />
 
     </RelativeLayout>
 
@@ -70,15 +70,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
-    <com.alphawallet.app.widget.AddressDetailView
-        android:id="@+id/recipient"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
     <com.alphawallet.app.widget.AmountDisplayWidget
         android:id="@+id/amount_display"
         android:layout_height="wrap_content"
-        android:layout_width="match_parent"/>
+        android:layout_width="match_parent">
+
+        <com.alphawallet.app.widget.AddressDetailView
+            android:id="@+id/recipient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.alphawallet.app.widget.AmountDisplayWidget>
 
     <com.alphawallet.app.widget.AssetDetailView
         android:id="@+id/asset_detail"
