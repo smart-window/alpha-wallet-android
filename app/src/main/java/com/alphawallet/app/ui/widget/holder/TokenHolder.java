@@ -48,6 +48,7 @@ public class TokenHolder extends BinderViewHolder<TokenCardMeta> implements View
 
     private final TokenIcon tokenIcon;
     private final TextView balanceEth;
+    private final TextView balanceData;
     private final TextView balanceCurrency;
     private final TextView text24Hours;
     private final TextView textAppreciation;
@@ -77,6 +78,7 @@ public class TokenHolder extends BinderViewHolder<TokenCardMeta> implements View
 
         tokenIcon = findViewById(R.id.token_icon);
         balanceEth = findViewById(R.id.eth_data);
+        balanceData = findViewById(R.id.balance_data);
         balanceCurrency = findViewById(R.id.balance_currency);
         text24Hours = findViewById(R.id.text_24_hrs);
         textAppreciation = findViewById(R.id.text_appreciation);
@@ -124,8 +126,11 @@ public class TokenHolder extends BinderViewHolder<TokenCardMeta> implements View
             contractSeparator.setVisibility(View.GONE);
 
             //setup name and value (put these together on a single string to make wrap-around text appear better).
-            String nameValue = token.getStringBalance() + " " + token.getFullName(assetDefinition, token.getTokenCount());
+            String nameValue = token.getFullName(assetDefinition, token.getTokenCount());
+            String balanceValue = token.getStringBalance();
             balanceEth.setText(nameValue);
+            balanceData.setText(balanceValue);
+
 
             primaryElement = false;
 
@@ -228,6 +233,7 @@ public class TokenHolder extends BinderViewHolder<TokenCardMeta> implements View
 
     private void fillEmpty() {
         balanceEth.setText(R.string.NA);
+        balanceData.setText(R.string.NA);
         balanceCurrency.setText(EMPTY_BALANCE);
     }
 
