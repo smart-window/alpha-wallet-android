@@ -587,7 +587,7 @@ public abstract class EthereumNetworkBase implements EthereumNetworkRepositoryTy
     @Override
     public Long getDefaultNetwork(boolean isMainNet)
     {
-        return isMainNet ? MAINNET_ID : RINKEBY_ID;
+        return isMainNet ? BINANCE_MAIN_ID : RINKEBY_ID;
     }
 
     @Override
