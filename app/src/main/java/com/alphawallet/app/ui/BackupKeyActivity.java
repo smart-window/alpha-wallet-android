@@ -532,7 +532,7 @@ public class BackupKeyActivity extends BaseActivity implements
     private void VerifySeedPhrase() {
         setContentView(R.layout.activity_verify_seed_phrase);
         initViews();
-        functionButtonBar.setPrimaryButtonText(R.string.action_continue);
+        functionButtonBar.setPrimaryButtonText(R.string.action_verify);
         functionButtonBar.setPrimaryButtonClickListener(v -> TestSeedPhrase());
         functionButtonBar.setPrimaryButtonEnabled(false);
         state = BackupState.VERIFY_SEED_PHRASE;
@@ -626,7 +626,7 @@ public class BackupKeyActivity extends BaseActivity implements
         seedWord.setTypeface(ResourcesCompat.getFont(this, R.font.font_regular));
         seedWord.setTextSize(TypedValue.COMPLEX_UNIT_SP, textSize);
         seedWord.setBackgroundResource(R.drawable.background_seed_word);
-        seedWord.setTextColor(getColor(R.color.white));
+        seedWord.setTextColor(getColor(R.color.blue));
         seedWord.setLayoutParams(params);
         seedWord.setGravity(Gravity.CENTER);
         seedWord.setPadding(padding, 0, padding, 0);

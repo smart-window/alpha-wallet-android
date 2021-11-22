@@ -34,7 +34,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="16dp"
             android:scaleType="fitCenter"
-            android:src="@drawable/seed"
+            android:src="@drawable/ic_backup_bg"
             android:visibility="visible" />
 
         <TextView

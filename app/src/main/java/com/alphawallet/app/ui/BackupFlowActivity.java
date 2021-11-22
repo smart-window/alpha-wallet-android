@@ -90,7 +90,7 @@ public class BackupFlowActivity extends BaseActivity implements
         setContentView(R.layout.activity_backup);
         initViews();
         title.setText(R.string.backup_seed_phrase);
-        backupImage.setImageResource(R.drawable.seed);
+        backupImage.setImageResource(R.drawable.ic_backup_bg);
         detail.setText(R.string.backup_seed_phrase_detail);
         functionButtonBar.setPrimaryButtonText(R.string.action_back_up_my_wallet);
         functionButtonBar.setPrimaryButtonClickListener(this);
