@@ -193,7 +193,7 @@ public class TokenHolder extends BinderViewHolder<TokenCardMeta> implements View
 
         if (!token.isEthereum() && token.tokenInfo.chainId != MAINNET_ID)
         {
-            showNetworkLabel();
+            hideNetworkLabel();
         }
         else
         {

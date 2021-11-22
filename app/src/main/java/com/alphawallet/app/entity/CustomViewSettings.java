@@ -31,7 +31,7 @@ public class CustomViewSettings
             // new TokenInfo(String TokenAddress, String TokenName, String TokenSymbol, int TokenDecimals, boolean isEnabled, long ChainId)
 //            new TokenInfo("0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48", "USD Coin", "USDC", 6, true, EthereumNetworkBase.MAINNET_ID),
 //            new TokenInfo("0x6C8c6b02E7b2BE14d4fA6022Dfd6d75921D90E4E", "Compound BAT", "CBAT", 8, true, EthereumNetworkBase.MAINNET_ID)
-            new TokenInfo("0xCA1262E77FB25C0A4112CFC9BAD3FF54F617F2E6", "Wrapped JAXNET", "WJXN", 0, true, EthereumNetworkBase.MAINNET_ID)
+            new TokenInfo("0xCA1262E77FB25C0A4112CFC9BAD3FF54F617F2E6", "Wrapped JAXNET", "WJXN", 0, true, EthereumNetworkBase.BINANCE_MAIN_ID)
     );
 
     //List of chains that wallet can show
