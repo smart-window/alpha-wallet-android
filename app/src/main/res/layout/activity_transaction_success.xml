@@ -22,7 +22,7 @@
             android:gravity="center_horizontal"
             android:text="@string/transaction_in_progress"
             android:textAlignment="center"
-            android:textColor="@color/black"
+            android:textColor="@color/blue"
             android:textSize="28sp" />
 
         <ImageView
@@ -48,7 +48,7 @@
             android:layout_centerHorizontal="true"
             custom:gravity="center"
             custom:bold="true"
-            custom:textColor="@color/black" />
+            custom:textColor="@color/blue" />
 
         <TextView
             android:id="@+id/text_detail"
@@ -63,7 +63,7 @@
             android:paddingEnd="50dp"
             android:text="@string/transaction_progress_detail"
             android:textAlignment="center"
-            android:textColor="@color/black"
+            android:textColor="@color/blue"
             android:textSize="17sp" />
 
         <com.alphawallet.app.widget.FunctionButtonBar
