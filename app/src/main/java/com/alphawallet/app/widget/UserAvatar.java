@@ -5,6 +5,9 @@ import static com.alphawallet.app.util.Utils.loadFile;
 import static com.alphawallet.ethereum.EthereumNetworkBase.MAINNET_ID;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.text.TextUtils;
 import android.util.AttributeSet;
@@ -158,6 +161,10 @@ public class UserAvatar extends LinearLayout
         if (address.equalsIgnoreCase(ZERO_ADDRESS)) return;
         image.setVisibility(View.VISIBLE);
         webLayout.setVisibility(View.GONE);
+
+        Bitmap bitmap = ((BitmapDrawable)getResources().getDrawable(R.drawable.wallet_avatar)).getBitmap();
+        image.setImageBitmap(bitmap);
+
 //        image.setImageBitmap(Blockies.createIcon(address.toLowerCase()));
     }
 
