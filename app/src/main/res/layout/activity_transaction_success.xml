@@ -28,13 +28,15 @@
         <ImageView
             android:id="@+id/backup_seed_image"
             android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:layout_margin="@dimen/dp14"
+            android:layout_height="200dp"
             android:layout_below="@id/text_title"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="16dp"
+            android:layout_marginStart="@dimen/dp14"
+            android:layout_marginTop="@dimen/dp14"
+            android:layout_marginEnd="@dimen/dp14"
+            android:layout_marginBottom="@dimen/dp14"
             android:scaleType="fitCenter"
-            android:src="@drawable/tx_in_progress"
+            android:src="@drawable/ic_transaction_progress"
             android:visibility="visible" />
 
         <com.alphawallet.app.widget.CopyTextView
