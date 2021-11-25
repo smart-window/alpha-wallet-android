@@ -4,6 +4,8 @@ import static com.alphawallet.app.entity.tokenscript.TokenscriptFunction.ZERO_AD
 import static com.alphawallet.app.util.Utils.loadFile;
 import static com.alphawallet.ethereum.EthereumNetworkBase.MAINNET_ID;
 
+import android.app.ActivityManager;
+import android.content.ComponentName;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;

@@ -17,12 +17,19 @@
     app:popupTheme="@style/AppTheme.PopupOverlay"
     app:titleTextAppearance="@style/AppTheme.Toolbar.Title">
 
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_avatar"
+        android:layout_marginHorizontal="15dp"
+        android:visibility="visible"/>
+
     <com.alphawallet.app.widget.UserAvatar
         android:id="@+id/user_address_blockie"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginHorizontal="15dp"
-        android:visibility="visible"/>
+        android:visibility="gone"/>
 
     <TextView
         android:id="@+id/toolbar_title"

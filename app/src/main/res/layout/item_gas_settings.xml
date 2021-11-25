@@ -96,7 +96,7 @@
             android:layout_weight="0.6"
             android:fontFamily="@font/font_semibold"
             android:gravity="center_horizontal"
-            android:textColor="#4C79CB"
+            android:textColor="@color/blue"
             android:lines="1"
             android:textSize="@dimen/sp17"
             android:text="@string/edit"
