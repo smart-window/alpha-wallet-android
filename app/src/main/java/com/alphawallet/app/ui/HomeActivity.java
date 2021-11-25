@@ -457,7 +457,7 @@ public class HomeActivity extends BaseNavigationActivity implements View.OnClick
         {
             walletTitle = getString(R.string.toolbar_header_wallet);
         }
-r
+
         double walletUSDValue = viewModel.getUSDValue();
         ((WalletFragment) walletFragment).setToolbarTitle(String.format("$%.2f", walletUSDValue));
     }
