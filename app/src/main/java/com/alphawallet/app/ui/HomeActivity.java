@@ -64,9 +64,18 @@ import com.alphawallet.app.entity.Operation;
 import com.alphawallet.app.entity.SignAuthenticationCallback;
 import com.alphawallet.app.entity.Wallet;
 import com.alphawallet.app.entity.WalletPage;
+import com.alphawallet.app.interact.ChangeTokenEnableInteract;
+import com.alphawallet.app.interact.FetchTokensInteract;
+import com.alphawallet.app.interact.GenericWalletInteract;
 import com.alphawallet.app.repository.EthereumNetworkRepository;
+import com.alphawallet.app.repository.PreferenceRepositoryType;
+import com.alphawallet.app.router.AssetDisplayRouter;
 import com.alphawallet.app.router.ImportTokenRouter;
+import com.alphawallet.app.router.MyAddressRouter;
+import com.alphawallet.app.router.TokenDetailRouter;
+import com.alphawallet.app.service.AssetDefinitionService;
 import com.alphawallet.app.service.NotificationService;
+import com.alphawallet.app.service.TokensService;
 import com.alphawallet.app.ui.widget.entity.ScrollControlViewPager;
 import com.alphawallet.app.util.LocaleUtils;
 import com.alphawallet.app.util.RootUtil;
@@ -448,8 +457,9 @@ public class HomeActivity extends BaseNavigationActivity implements View.OnClick
         {
             walletTitle = getString(R.string.toolbar_header_wallet);
         }
-
-        ((WalletFragment) walletFragment).setToolbarTitle(walletTitle);
+r
+        double walletUSDValue = viewModel.getUSDValue();
+        ((WalletFragment) walletFragment).setToolbarTitle(String.format("$%.2f", walletUSDValue));
     }
 
     private void onError(ErrorEnvelope errorEnvelope)

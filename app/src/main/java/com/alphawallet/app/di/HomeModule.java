@@ -17,6 +17,7 @@ import com.alphawallet.app.service.AssetDefinitionService;
 import com.alphawallet.app.service.TickerService;
 import com.alphawallet.app.service.TransactionsService;
 import com.alphawallet.app.viewmodel.HomeViewModelFactory;
+import com.alphawallet.app.service.TokensService;
 
 import dagger.Module;
 import dagger.Provides;
@@ -36,6 +37,7 @@ class HomeModule {
             MyAddressRouter myAddressRouter,
             TransactionsService transactionsService,
             TickerService tickerService,
+            TokensService tokensService,
             AnalyticsServiceType analyticsService,
             ExternalBrowserRouter externalBrowserRouter) {
         return new HomeViewModelFactory(
@@ -50,6 +52,7 @@ class HomeModule {
                 myAddressRouter,
                 transactionsService,
                 tickerService,
+                tokensService,
                 analyticsService,
                 externalBrowserRouter);
     }

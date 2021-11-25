@@ -16,6 +16,7 @@ import com.alphawallet.app.router.MyAddressRouter;
 import com.alphawallet.app.service.AnalyticsServiceType;
 import com.alphawallet.app.service.AssetDefinitionService;
 import com.alphawallet.app.service.TickerService;
+import com.alphawallet.app.service.TokensService;
 import com.alphawallet.app.service.TransactionsService;
 
 public class HomeViewModelFactory implements ViewModelProvider.Factory {
@@ -32,6 +33,7 @@ public class HomeViewModelFactory implements ViewModelProvider.Factory {
     private final TickerService tickerService;
     private final AnalyticsServiceType analyticsService;
     private final ExternalBrowserRouter externalBrowserRouter;
+    private final TokensService tokensService;
 
     public HomeViewModelFactory(
             PreferenceRepositoryType preferenceRepository,
@@ -45,6 +47,7 @@ public class HomeViewModelFactory implements ViewModelProvider.Factory {
             MyAddressRouter myAddressRouter,
             TransactionsService transactionsService,
             TickerService tickerService,
+            TokensService tokensService,
             AnalyticsServiceType analyticsService,
             ExternalBrowserRouter externalBrowserRouter) {
         this.preferenceRepository = preferenceRepository;
@@ -58,6 +61,7 @@ public class HomeViewModelFactory implements ViewModelProvider.Factory {
         this.myAddressRouter = myAddressRouter;
         this.transactionsService = transactionsService;
         this.tickerService = tickerService;
+        this.tokensService = tokensService;
         this.analyticsService = analyticsService;
         this.externalBrowserRouter = externalBrowserRouter;
     }
@@ -77,6 +81,7 @@ public class HomeViewModelFactory implements ViewModelProvider.Factory {
                 myAddressRouter,
                 transactionsService,
                 tickerService,
+                tokensService,
                 analyticsService,
                 externalBrowserRouter
         );

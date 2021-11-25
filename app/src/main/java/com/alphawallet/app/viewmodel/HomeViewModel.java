@@ -93,6 +93,7 @@ public class HomeViewModel extends BaseViewModel {
     private final MyAddressRouter myAddressRouter;
     private final AnalyticsServiceType analyticsService;
     private final ExternalBrowserRouter externalBrowserRouter;
+    private final TokensService tokensService;
 
     private CryptoFunctions cryptoFunctions;
     private ParseMagicLink parser;
@@ -115,6 +116,7 @@ public class HomeViewModel extends BaseViewModel {
             MyAddressRouter myAddressRouter,
             TransactionsService transactionsService,
             TickerService tickerService,
+            TokensService tokensService,
             AnalyticsServiceType analyticsService,
             ExternalBrowserRouter externalBrowserRouter ) {
         this.preferenceRepository = preferenceRepository;
@@ -128,6 +130,7 @@ public class HomeViewModel extends BaseViewModel {
         this.myAddressRouter = myAddressRouter;
         this.transactionsService = transactionsService;
         this.tickerService = tickerService;
+        this.tokensService = tokensService;
         this.analyticsService = analyticsService;
         this.externalBrowserRouter = externalBrowserRouter;
     }
@@ -163,6 +166,12 @@ public class HomeViewModel extends BaseViewModel {
     public void onClean()
     {
 
+    }
+
+    public double getUSDValue()
+    {
+        double walletUSDValue = tokensService.getUSDValue();
+        return walletUSDValue;
     }
 
     private void onDefaultWallet(final Wallet wallet)
