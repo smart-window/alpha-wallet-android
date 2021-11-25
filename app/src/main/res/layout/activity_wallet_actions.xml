@@ -102,6 +102,7 @@
                 custom:hint="@string/enter_ens"
                 custom:label="@string/ens_name"
                 custom:ens="true"
+                android:visibility="gone"
                 custom:nocam="true"/>
 
             <View

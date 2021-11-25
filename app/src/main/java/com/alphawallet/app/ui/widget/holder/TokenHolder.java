@@ -311,9 +311,9 @@ public class TokenHolder extends BinderViewHolder<TokenCardMeta> implements View
         int contractStringId = token.getContractType();
         if (contractStringId > 0)
         {
-            contractType.setText(contractStringId);
+//            contractType.setText(contractStringId);
             contractType.setVisibility(View.VISIBLE);
-            if (primaryElement) contractSeparator.setVisibility(View.VISIBLE);
+//            if (primaryElement) contractSeparator.setVisibility(View.VISIBLE);
         }
         else
         {
