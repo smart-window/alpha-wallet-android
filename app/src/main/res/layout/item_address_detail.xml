@@ -66,7 +66,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/dp16"
             android:text="@string/wallet_address"
-            android:textColor="@color/dove"
+            android:textColor="@color/light_blue"
             android:fontFamily="@font/font_regular"
             android:gravity="start"
             android:textSize="@dimen/sp13"/>
@@ -78,7 +78,7 @@
             android:layout_marginTop="@dimen/dp5"
             android:layout_marginStart="@dimen/dp16"
             android:layout_marginEnd="40dp"
-            android:textColor="@color/black"
+            android:textColor="@color/blue"
             android:gravity="start"
             android:fontFamily="@font/font_regular"
             tools:text="0x6EBaF477F83E055589C1188bCC6DDCCD8C9B131a"
@@ -92,10 +92,11 @@
             android:layout_marginTop="@dimen/dp10"
             android:layout_marginBottom="@dimen/dp10"
             android:text="@string/ens_name"
-            android:textColor="@color/dove"
+            android:textColor="@color/light_blue"
             android:fontFamily="@font/font_regular"
             android:gravity="start"
-            android:textSize="@dimen/sp13"/>
+            android:textSize="@dimen/sp13"
+            android:visibility="gone"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -109,7 +110,8 @@
             android:id="@+id/blockie"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:src="@drawable/big_green_tick"/>
+            android:src="@drawable/big_green_tick"
+            android:visibility="gone"/>
 
         <TextView
             android:id="@+id/text_ens_name"
