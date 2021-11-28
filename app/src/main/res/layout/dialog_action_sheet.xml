@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:custom="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/background_card"
-    android:orientation="vertical">
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/background_card">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -13,38 +13,38 @@
 
         <ImageView
             android:id="@+id/image_close"
+            android:contentDescription="@string/action_close"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
             android:layout_marginStart="@dimen/dp16"
-            android:background="@color/transparent"
-            android:contentDescription="@string/action_close"
             android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
             android:src="@drawable/ic_close_button" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginTop="@dimen/dp8"
-            android:layout_marginBottom="@dimen/dp8"
-            android:layout_toStartOf="@id/logo"
             android:layout_toEndOf="@id/image_close"
-            android:fontFamily="@font/font_semibold"
-            android:gravity="center_horizontal"
+            android:layout_toStartOf="@id/logo"
             android:text="@string/confirm_transaction"
             android:textColor="@color/blue"
-            android:textSize="@dimen/sp20" />
+            android:fontFamily="@font/font_semibold"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp8"
+            android:layout_marginBottom="@dimen/dp8"
+            android:textSize="@dimen/sp20"/>
 
         <ImageView
             android:id="@+id/logo"
+            android:contentDescription="@string/app_name"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:layout_marginEnd="10dp"
-            android:contentDescription="@string/app_name"
             android:src="@drawable/ic_jax_logo"
+            android:layout_marginEnd="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
             android:visibility="invisible" />
 
     </RelativeLayout>
@@ -56,10 +56,10 @@
 
     <com.alphawallet.app.widget.AddressDetailView
         android:id="@+id/requester"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:visibility="gone"
-        custom:label="@string/requester_url" />
+        custom:label="@string/requester_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
     <com.alphawallet.app.widget.GasWidget
         android:id="@+id/gas_widgetx"
@@ -69,25 +69,23 @@
     <com.alphawallet.app.widget.TransactionDetailWidget
         android:id="@+id/detail_widget"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"/>
+
+    <com.alphawallet.app.widget.AddressDetailView
+        android:id="@+id/recipient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
     <com.alphawallet.app.widget.AmountDisplayWidget
         android:id="@+id/amount_display"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <com.alphawallet.app.widget.AddressDetailView
-            android:id="@+id/recipient"
-            android:visibility="gone"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    </com.alphawallet.app.widget.AmountDisplayWidget>
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
 
     <com.alphawallet.app.widget.AssetDetailView
         android:id="@+id/asset_detail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:visibility="gone" />
+        android:visibility="gone"/>
 
     <View
         android:layout_width="match_parent"
@@ -97,7 +95,7 @@
     <com.alphawallet.app.widget.ConfirmationWidget
         android:id="@+id/confirmation_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"/>
 
     <com.alphawallet.app.widget.FunctionButtonBar
         android:id="@+id/layoutButtons"
