@@ -853,6 +853,4 @@
     <string name="connected_to">Connected to</string>
     <string name="not_connected">Not Connected</string>
     <string name="online">Online</string>
-<!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
