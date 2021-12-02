@@ -13,7 +13,6 @@ import com.fasterxml.jackson.databind.ser.Serializers;
  * A simple {@link Fragment} subclass.
  * Use the {@link SwapFragment#newInstance} factory method to
  * create an instance of this fragment.
- *
  */
 public class SwapFragment extends BaseFragment {
 
@@ -60,7 +59,10 @@ public class SwapFragment extends BaseFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_swap, container, false);
+        View view = inflater.inflate(R.layout.fragment_swap, container, false);
+        toolbar(view);
+        setToolbarTitle(R.string.swap_label);
+
+        return view;
     }
 }
