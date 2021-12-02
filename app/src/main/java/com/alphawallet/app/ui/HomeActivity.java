@@ -458,8 +458,10 @@ public class HomeActivity extends BaseNavigationActivity implements View.OnClick
             walletTitle = getString(R.string.toolbar_header_wallet);
         }
 
-        double walletUSDValue = viewModel.getUSDValue();
-        ((WalletFragment) walletFragment).setToolbarTitle(String.format("$%.2f", walletUSDValue));
+        ((WalletFragment) walletFragment).setToolbarTitle(walletTitle);
+
+//        double walletUSDValue = viewModel.getUSDValue();
+//        ((WalletFragment) walletFragment).setToolbarTitle(String.format("$%.2f", walletUSDValue));
     }
 
     private void onError(ErrorEnvelope errorEnvelope)

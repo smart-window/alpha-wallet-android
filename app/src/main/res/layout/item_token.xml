@@ -32,7 +32,6 @@
         android:layout_alignParentTop="true"
         android:orientation="vertical"
         android:paddingTop="2dp"
-        android:background="@drawable/background_token_icon"
         android:paddingBottom="2dp">
 
         <LinearLayout
