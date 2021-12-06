@@ -1,13 +1,13 @@
 package com.alphawallet.app.ui;
 
-import androidx.fragment.app.Fragment;
-import androidx.appcompat.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
-import com.alphawallet.app.R;
+import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.Fragment;
 
+import com.alphawallet.app.R;
 
 public class BaseFragment extends Fragment implements Toolbar.OnMenuItemClickListener {
     private Toolbar toolbar;
@@ -17,6 +17,7 @@ public class BaseFragment extends Fragment implements Toolbar.OnMenuItemClickLis
         toolbar = view.findViewById(R.id.toolbar);
         toolbarTitle = toolbar.findViewById(R.id.toolbar_title);
     }
+
     protected void toolbar(View view) {
         initToolbar(view);
     }
@@ -72,13 +73,11 @@ public class BaseFragment extends Fragment implements Toolbar.OnMenuItemClickLis
         return false;
     }
 
-    public void comeIntoFocus()
-    {
+    public void comeIntoFocus() {
         //
     }
 
-    public void leaveFocus()
-    {
+    public void leaveFocus() {
         //
     }
 }

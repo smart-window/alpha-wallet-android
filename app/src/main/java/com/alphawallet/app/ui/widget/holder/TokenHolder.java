@@ -128,6 +128,10 @@ public class TokenHolder extends BinderViewHolder<TokenCardMeta> implements View
             //setup name and value (put these together on a single string to make wrap-around text appear better).
             String nameValue = token.getFullName(assetDefinition, token.getTokenCount());
             String balanceValue = token.getStringBalance();
+            String networkName = token.getNetworkName();
+            if (!nameValue.contains(networkName)) {
+                nameValue += " (" + networkName + ")";
+            }
             balanceEth.setText(nameValue);
             balanceData.setText(balanceValue);
 
