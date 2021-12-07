@@ -173,10 +173,10 @@
             android:visibility="visible" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:layout_below="@+id/layout4"
             android:id="@+id/primary_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/layout4"
             android:layout_marginTop="@dimen/dp8"
             android:background="@drawable/background_blue_border_button"
             android:ellipsize="end"

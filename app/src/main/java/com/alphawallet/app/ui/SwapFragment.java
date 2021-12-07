@@ -1,6 +1,8 @@
 package com.alphawallet.app.ui;
 
 import android.os.Bundle;
+
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -31,7 +33,9 @@ public class SwapFragment extends BaseFragment implements SpinnerAdapter.ItemCli
     private ImageView icon1, icon2;
     private String selectedItem1 = "Wjxn", selectedItem2 = "Wjxn";
     boolean isSpinnerShowing1 = false, isSpinnerShowing2 = false;
+    AppCompatButton enterAmountButton;
 
+    AmountBottomSheet amountBottomSheet;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -80,8 +84,21 @@ public class SwapFragment extends BaseFragment implements SpinnerAdapter.ItemCli
         toolbar(view);
         setToolbarTitle(R.string.swap_label);
         init(view);
+        setListeners();
 
         return view;
+    }
+
+    private void setListeners() {
+
+        enterAmountButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                amountBottomSheet.show(requireActivity().getSupportFragmentManager(),"amountBottomSheet");
+
+                //done
+            }
+        });
     }
 
     private void init( View view) {
@@ -90,6 +107,7 @@ public class SwapFragment extends BaseFragment implements SpinnerAdapter.ItemCli
         LinearLayout ll2Top = view.findViewById(R.id.ll2Top);
         RecyclerView recyclerView1 = view.findViewById(R.id.recyclerView1);
         RecyclerView recyclerView2 = view.findViewById(R.id.recyclerView2);
+         enterAmountButton = view.findViewById(R.id.primary_button);
 
         ll1Body = view.findViewById(R.id.ll1Body);
         ll2Body = view.findViewById(R.id.ll2Body);
@@ -103,6 +121,8 @@ public class SwapFragment extends BaseFragment implements SpinnerAdapter.ItemCli
 
         icon1.setImageResource(R.drawable.ic_wjxn);
         icon2.setImageResource(R.drawable.ic_wjxn);
+
+        amountBottomSheet = new AmountBottomSheet();
 
         ll1Top.setOnClickListener(v -> {setVisibility1(); isSpinnerShowing2 = false; ll2Body.setVisibility(View.GONE);});
         ll2Top.setOnClickListener(v -> {setVisibility2(); isSpinnerShowing1 = false; ll1Body.setVisibility(View.GONE);});
