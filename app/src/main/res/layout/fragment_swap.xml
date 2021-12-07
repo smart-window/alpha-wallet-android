@@ -2,76 +2,79 @@
 <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/colorTheme"
     android:orientation="vertical">
 
     <include layout="@layout/layout_simple_toolbar" />
 
-    <androidx.appcompat.widget.LinearLayoutCompat
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_marginHorizontal="@dimen/dp17"
+        android:layout_marginVertical="@dimen/dp15"
+        android:padding="@dimen/dp10"
+        android:background="@drawable/background_address_bar">
 
-        <androidx.appcompat.widget.LinearLayoutCompat
+        <LinearLayout
+            android:id="@+id/ll1Top"
+            android:layout_width="130dp"
+            android:layout_height="37dp"
+            android:background="@drawable/background_spinner_top"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvSelectedItem1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:textColor="@color/blue" />
+
+            <ImageView
+                android:id="@+id/icon1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvAmount1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="@dimen/dp17"
-            android:layout_marginVertical="@dimen/dp15"
-            android:background="@drawable/background_address_bar"
-            android:orientation="vertical">
+            android:layout_below="@+id/ll1Top"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginBottom="@dimen/dp10"
+            android:ellipsize="end"
+            android:fontFamily="@font/font_regular"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Balance: 100.000 WJAX"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/sp14" />
 
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:padding="@dimen/dp10">
-
-                <Spinner
-                    android:layout_width="130dp"
-                    android:layout_height="37dp"
-                    android:layout_gravity="start"
-                    android:background="@drawable/background_spinner_square"
-                    android:padding="15dp" />
-
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="1dp"
-                    android:layout_gravity="center"
-                    android:layout_weight="1" />
-
-                <androidx.appcompat.widget.AppCompatEditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:background="@null"
-                    android:fontFamily="@font/font_bold"
-                    android:hint="00.00"
-                    android:imeOptions="actionDone"
-                    android:inputType="numberDecimal"
-                    android:maxLength="5"
-                    android:textColor="@color/blue"
-                    android:textColorHint="@color/blue"
-                    android:textSize="@dimen/sp20" />
-            </androidx.appcompat.widget.LinearLayoutCompat>
-
-            <androidx.appcompat.widget.AppCompatTextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/dp10"
-                android:layout_marginBottom="@dimen/dp10"
-                android:ellipsize="end"
-                android:fontFamily="@font/font_regular"
-                android:maxLines="1"
-                android:singleLine="true"
-                android:text="Balance: 100.000 WJAX"
-                android:textColor="@color/blue"
-                android:textSize="@dimen/sp14" />
-
-        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:fontFamily="@font/font_bold"
+            android:hint="00.00"
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal"
+            android:maxLength="5"
+            android:textColor="@color/blue"
+            android:textColorHint="@color/blue"
+            android:textSize="@dimen/sp20" />
 
         <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/layout2"
             android:layout_width="@dimen/dp30"
             android:layout_height="@dimen/dp25"
+            android:layout_below="@+id/tvAmount1"
+            android:layout_marginVertical="@dimen/dp10"
+            android:layout_centerHorizontal="true"
             android:layout_gravity="center"
             android:background="@drawable/background_blue_border_button"
             android:padding="@dimen/dp5"
@@ -79,67 +82,85 @@
             android:src="@drawable/ic_transactions"
             android:tint="@color/white" />
 
-        <androidx.appcompat.widget.LinearLayoutCompat
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="@dimen/dp17"
-            android:layout_marginVertical="@dimen/dp15"
-            android:background="@drawable/background_address_bar"
-            android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/ll2Top"
+            android:layout_width="130dp"
+            android:layout_height="37dp"
+            android:layout_below="@+id/layout2"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@drawable/background_spinner_top"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:padding="@dimen/dp10">
-
-                <Spinner
-                    android:layout_width="130dp"
-                    android:layout_height="37dp"
-                    android:layout_gravity="start"
-                    android:background="@drawable/background_spinner_square"
-                    android:padding="15dp" />
-
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="1dp"
-                    android:layout_gravity="center"
-                    android:layout_weight="1" />
-
-                <androidx.appcompat.widget.AppCompatEditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:background="@null"
-                    android:fontFamily="@font/font_bold"
-                    android:hint="00.00"
-                    android:imeOptions="actionDone"
-                    android:inputType="numberDecimal"
-                    android:maxLength="5"
-                    android:textColor="@color/blue"
-                    android:textColorHint="@color/blue"
-                    android:textSize="@dimen/sp20" />
-            </androidx.appcompat.widget.LinearLayoutCompat>
-
-            <androidx.appcompat.widget.AppCompatTextView
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/tvSelectedItem2"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/dp10"
-                android:layout_marginBottom="@dimen/dp10"
-                android:ellipsize="end"
-                android:fontFamily="@font/font_regular"
-                android:maxLines="1"
-                android:singleLine="true"
-                android:text="Balance: 100.000 WJAX"
-                android:textColor="@color/blue"
-                android:textSize="@dimen/sp14" />
-        </androidx.appcompat.widget.LinearLayoutCompat>
+                android:layout_marginHorizontal="10dp"
+                android:textColor="@color/blue" />
+
+            <ImageView
+                android:id="@+id/icon2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+
+        </LinearLayout>
 
         <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvAmount2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll2Top"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginBottom="@dimen/dp10"
+            android:ellipsize="end"
+            android:fontFamily="@font/font_regular"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Balance: 100.000 WJAX"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/sp14" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_below="@+id/layout2"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:fontFamily="@font/font_bold"
+            android:hint="00.00"
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal"
+            android:maxLength="5"
+            android:textColor="@color/blue"
+            android:textColorHint="@color/blue"
+            android:textSize="@dimen/sp20" />
+
+        <LinearLayout
+            android:id="@+id/ll1Body"
+            android:layout_below="@+id/ll1Top"
+            android:layout_width="130dp"
+            android:visibility="gone"
+            android:background="@drawable/background_spinner_body"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView1"
+                android:layout_width="match_parent"
+                tools:itemCount="3"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/layout4"
+            android:layout_below="@+id/tvAmount2"
+            android:layout_alignParentEnd="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
-            android:layout_marginHorizontal="@dimen/dp15"
             android:layout_marginTop="@dimen/dp5"
             android:layout_marginBottom="@dimen/dp10"
             android:ellipsize="end"
@@ -152,10 +173,10 @@
             android:visibility="visible" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:layout_below="@+id/layout4"
             android:id="@+id/primary_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="@dimen/dp17"
             android:layout_marginTop="@dimen/dp8"
             android:background="@drawable/background_blue_border_button"
             android:ellipsize="end"
@@ -166,6 +187,23 @@
             android:textColor="@color/white"
             android:textSize="17sp" />
 
-    </androidx.appcompat.widget.LinearLayoutCompat>
+        <LinearLayout
+            android:id="@+id/ll2Body"
+            android:layout_below="@+id/ll2Top"
+            android:layout_width="130dp"
+            android:elevation="@dimen/dp5"
+            android:visibility="gone"
+            android:background="@drawable/background_spinner_body"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView2"
+                android:layout_width="match_parent"
+                tools:itemCount="3"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
 
 </androidx.appcompat.widget.LinearLayoutCompat>
