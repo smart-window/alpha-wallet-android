@@ -27,6 +27,7 @@ import com.alphawallet.app.entity.ContractLocator;
 import com.alphawallet.app.entity.Wallet;
 import com.alphawallet.app.entity.tokens.Token;
 import com.alphawallet.app.entity.tokens.TokenCardMeta;
+import com.alphawallet.app.repository.EthereumNetworkBase;
 import com.alphawallet.app.repository.TokensRealmSource;
 import com.alphawallet.app.repository.entity.RealmToken;
 import com.alphawallet.app.router.HomeRouter;
@@ -68,6 +69,8 @@ public class TokenManagementActivity extends BaseActivity implements TokenListAd
         AndroidInjection.inject(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_token_management);
+        EthereumNetworkBase.statusbarColorChange(TokenManagementActivity.this,getColor(R.color.blue));
+
         toolbar();
         setTitle(getString(R.string.add_hide_tokens));
         initViews();

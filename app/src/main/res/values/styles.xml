@@ -31,8 +31,8 @@
         <item name="android:autoCompleteTextViewStyle">@style/Widget.AppCompat.Light.AutoCompleteTextView</item>
         <item name="android:dialogTheme">@style/MyDialogTheme</item>
         <item name="android:alertDialogTheme">@style/MyDialogTheme</item>
-    </style>
 
+    </style>
 
     <style name="AppTheme.Toolbar" parent="ThemeOverlay.AppCompat.ActionBar">
         <item name="colorControlNormal">@color/black</item>

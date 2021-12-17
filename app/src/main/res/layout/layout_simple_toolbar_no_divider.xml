@@ -22,7 +22,7 @@
         android:layout_height="30dp"
         android:background="@drawable/ic_avatar"
         android:layout_marginHorizontal="15dp"
-        android:visibility="visible"/>
+        android:visibility="gone"/>
 
     <com.alphawallet.app.widget.UserAvatar
         android:id="@+id/user_address_blockie"

@@ -3,16 +3,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:background="@color/greyf9"
-    android:gravity="center">
+    android:orientation="vertical">
 
-    <View
+<!--    <View
         android:layout_width="match_parent"
         android:layout_height="1px"
-        android:background="@color/greye5"/>
+        android:background="@color/greye5"/>-->
 
     <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/font_semibold"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        tools:text="Display Token" />
+
+<!--    <TextView
         android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -23,10 +32,10 @@
         android:gravity="center_vertical"
         android:textColor="@color/grey76"
         android:textSize="15sp"
-        tools:text="Jan, 09 2017" />
-
+        tools:text="Jan, 09 2017" />-->
+<!--
     <View
         android:layout_width="match_parent"
         android:layout_height="1px"
-        android:background="@color/greye5"/>
+        android:background="@color/greye5"/>-->
 </LinearLayout>

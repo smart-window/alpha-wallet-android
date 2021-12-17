@@ -28,7 +28,7 @@ import com.alphawallet.app.entity.tokens.TokenCardMeta;
 import com.alphawallet.app.repository.EthereumNetworkBase;
 import com.alphawallet.app.repository.entity.RealmToken;
 import com.alphawallet.app.ui.widget.adapter.ActivityAdapter;
-import com.alphawallet.app.ui.widget.adapter.TokensAdapter;
+import com.alphawallet.app.ui.widget.adapter.TokensAdapter1;
 import com.alphawallet.app.viewmodel.Erc20DetailViewModel;
 import com.alphawallet.app.viewmodel.Erc20DetailViewModelFactory;
 import com.alphawallet.app.widget.ActivityHistoryList;
@@ -68,7 +68,7 @@ public class Erc20DetailActivity extends BaseActivity implements StandardFunctio
     private RecyclerView tokenView;
     private CertifiedToolbarView toolbarView;
 
-    private TokensAdapter tokenViewAdapter;
+    private TokensAdapter1 tokenViewAdapter;
     private ActivityHistoryList activityHistoryList = null;
     private Realm realm = null;
     private RealmResults<RealmToken> realmTokenUpdates;
@@ -79,6 +79,7 @@ public class Erc20DetailActivity extends BaseActivity implements StandardFunctio
         AndroidInjection.inject(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_erc20_token_detail);
+        EthereumNetworkBase.statusbarColorChange(Erc20DetailActivity.this,getColor(R.color.blue));
         symbol = null;
         toolbar();
         setTitle("");
@@ -106,8 +107,7 @@ public class Erc20DetailActivity extends BaseActivity implements StandardFunctio
 
         if (viewModel == null)
         {
-            viewModel = new ViewModelProvider(this, erc20DetailViewModelFactory)
-                    .get(Erc20DetailViewModel.class);
+            viewModel = new ViewModelProvider(this, erc20DetailViewModelFactory).get(Erc20DetailViewModel.class);
             viewModel.sig().observe(this, sigData -> toolbarView.onSigData(sigData, this));
             viewModel.newScriptFound().observe(this, this::onNewScript);
             findViewById(R.id.certificate_spinner).setVisibility(View.VISIBLE);
@@ -146,7 +146,7 @@ public class Erc20DetailActivity extends BaseActivity implements StandardFunctio
                 return false;
             }
         });
-        tokenViewAdapter = new TokensAdapter(null, viewModel.getAssetDefinitionService(), viewModel.getTokensService(), null);
+        tokenViewAdapter = new TokensAdapter1(null, viewModel.getAssetDefinitionService(), viewModel.getTokensService(), null);
         tokenViewAdapter.updateToken(tokenMeta, true);
         tokenView.setAdapter(tokenViewAdapter);
         setTokenListener();

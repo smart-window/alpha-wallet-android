@@ -8,8 +8,12 @@
     <RelativeLayout
         android:id="@+id/layout_list_item"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:background="@color/white"
+        android:layout_height="70dp"
+        android:layout_marginStart="@dimen/dp12"
+        android:layout_marginEnd="@dimen/dp12"
+        android:layout_marginTop="@dimen/dp6"
+        android:layout_marginBottom="@dimen/dp6"
+        android:background="@drawable/background_marketplace_event"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -37,7 +41,7 @@
             android:layout_toStartOf="@id/switch_enabled"
             android:layout_toEndOf="@id/icon_wrapper"
             android:fontFamily="@font/font_regular"
-            android:textColor="@color/black"
+            android:textColor="@color/sub_blue"
             android:textSize="18sp"
             tools:text="Sample Token Name" />
 

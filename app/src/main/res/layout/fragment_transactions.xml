@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorTheme"
+    android:background="@color/greye5"
     android:orientation="vertical">
 
     <include layout="@layout/layout_simple_toolbar" />
@@ -13,8 +13,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/toolbar"
+        android:layout_marginTop="@dimen/dp10"
         android:layout_marginBottom="?actionBarSize"
-        android:background="@color/alabaster">
+        android:background="@color/greye5">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/list"

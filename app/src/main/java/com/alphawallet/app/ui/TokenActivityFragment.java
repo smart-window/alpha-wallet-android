@@ -53,8 +53,7 @@ public class TokenActivityFragment extends BaseFragment {
 
         if (getArguments() != null)
         {
-            viewModel = new ViewModelProvider(this, viewModelFactory)
-                    .get(TokenActivityViewModel.class);
+            viewModel = new ViewModelProvider(this, viewModelFactory).get(TokenActivityViewModel.class);
 
             long chainId = getArguments().getLong(C.EXTRA_CHAIN_ID, EthereumNetworkBase.MAINNET_ID);
             token = viewModel.getTokensService().getToken(chainId, getArguments().getString(C.EXTRA_ADDRESS));

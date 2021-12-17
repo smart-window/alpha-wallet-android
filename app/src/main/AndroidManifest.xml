@@ -144,6 +144,7 @@
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:name=".ui.WalletsActivity"
+            android:theme="@style/SplashTheme"
             android:label="@string/title_account_list" />
 
         <activity
@@ -161,23 +162,27 @@
             android:screenOrientation="portrait"
             android:name=".ui.NameThisWalletActivity"
             android:windowSoftInputMode="adjustResize"
+            android:theme="@style/SplashTheme"
             android:label="@string/name_this_wallet" />
         <activity
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:name=".ui.ImportWalletActivity"
             android:label="@string/title_import"
+            android:theme="@style/SplashTheme"
             android:windowSoftInputMode="stateAlwaysVisible|adjustResize" />
 
         <activity
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:name=".ui.TransactionDetailActivity"
+            android:theme="@style/SplashTheme"
             android:label="@string/title_transaction_details" />
         <activity
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:name=".ui.MyAddressActivity"
+            android:theme="@style/SplashTheme"
             android:label="@string/title_my_address" />
 
         <activity
@@ -185,30 +190,35 @@
             android:screenOrientation="portrait"
             android:name=".ui.SendActivity"
             android:label="@string/title_activity_send"
+            android:theme="@style/SplashTheme"
             android:windowSoftInputMode="adjustResize" />
 
         <activity
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:name=".ui.AddTokenActivity"
+            android:theme="@style/SplashTheme"
             android:label="@string/title_add_token" />
 
         <activity
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:name=".ui.AssetDisplayActivity"
+            android:theme="@style/SplashTheme"
             android:label="@string/title_use_token" />
 
         <activity
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:name=".ui.RedeemSignatureDisplayActivity"
+            android:theme="@style/SplashTheme"
             android:label="@string/title_use_token" />
 
         <activity
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:name=".ui.GasSettingsActivity"
+            android:theme="@style/SplashTheme"
             android:label="@string/title_send_settings" />
 
         <activity
@@ -216,12 +226,14 @@
             android:screenOrientation="portrait"
             android:name=".ui.SellDetailActivity"
             android:label="@string/action_sell"
+            android:theme="@style/SplashTheme"
             android:windowSoftInputMode="adjustPan" />
 
         <activity
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:name=".ui.RedeemAssetSelectActivity"
+            android:theme="@style/SplashTheme"
             android:label="@string/title_redeem" />
 
         <!--<activity
@@ -233,42 +245,49 @@
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:name=".ui.ImportTokenActivity"
+            android:theme="@style/SplashTheme"
             android:label="@string/title_import_token" />
 
         <activity
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:name=".ui.TransferTicketDetailActivity"
+            android:theme="@style/SplashTheme"
             android:label="@string/label_transfer_ticket_detail" />
 
         <activity
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:name=".ui.HelpActivity"
+            android:theme="@style/SplashTheme"
             android:label="@string/toolbar_header_help" />
 
         <activity
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:name=".ui.TokenDetailActivity"
+            android:theme="@style/SplashTheme"
             android:label="@string/token_details" />
 
         <activity
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:name=".ui.Erc20DetailActivity"
+            android:theme="@style/SplashTheme"
             android:label="@string/erc20_details" />
 
         <activity
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:name=".ui.TokenFunctionActivity"
+            android:theme="@style/SplashTheme"
             android:label="@string/token_function" />
 
         <activity
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:name=".ui.FunctionActivity"
+            android:theme="@style/SplashTheme"
             android:label="@string/token_function" />
 
         <!--<service android:name="AlphaWalletFirebaseMessagingService">-->
@@ -293,82 +312,96 @@
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:name=".ui.WalletActionsActivity"
+            android:theme="@style/SplashTheme"
             android:label="Wallet Actions" />
 
         <activity
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:name=".ui.AddEditDappActivity"
+            android:theme="@style/SplashTheme"
             android:label="Add DApp" />
 
         <activity
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:name=".ui.SelectNetworkActivity"
+            android:theme="@style/SplashTheme"
             android:label="Select DApp Browser Network" />
 
         <activity
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:name=".ui.SelectNetworkFilterActivity"
+            android:theme="@style/SplashTheme"
             android:label="Select Network Filters" />
 
         <activity
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:name=".ui.TokenManagementActivity"
+            android:theme="@style/SplashTheme"
             android:label="Manage Tokens" />
 
         <activity
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:name=".ui.SelectLocaleActivity"
+            android:theme="@style/SplashTheme"
             android:label="Select Language" />
 
         <activity
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:name=".ui.SelectCurrencyActivity"
+            android:theme="@style/SplashTheme"
             android:label="Select Currency" />
 
         <activity
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:name=".ui.BackupKeyActivity"
+            android:theme="@style/SplashTheme"
             android:windowSoftInputMode="stateHidden|adjustResize" />
 
         <activity
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:name=".ui.SupportSettingsActivity"
+            android:theme="@style/SplashTheme"
             android:label="Support Settings" />
 
         <activity
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:name=".ui.AdvancedSettingsActivity"
+            android:theme="@style/SplashTheme"
             android:label="Advanced Settings" />
 
         <activity
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:name=".ui.StaticViewer"
+            android:theme="@style/SplashTheme"
             android:label="View Text" />
 
         <activity android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:name=".ui.TokenScriptManagementActivity"
+            android:theme="@style/SplashTheme"
             android:label="@string/tokenscript_management"/>
 
         <activity android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:name=".ui.TokenActivity"
+            android:theme="@style/SplashTheme"
             android:label="@string/activity_label"/>
 
         <activity
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:name=".ui.WalletConnectActivity"
+            android:theme="@style/SplashTheme"
             android:launchMode="singleTop"
             android:label="WalletConnect" />
 
@@ -376,66 +409,77 @@
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:name=".ui.BackupFlowActivity"
+            android:theme="@style/SplashTheme"
             android:label="WalletConnect" />
 
         <activity
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:name=".ui.SignDetailActivity"
+            android:theme="@style/SplashTheme"
             android:label="Sign Details" />
 
         <activity
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:name=".ui.WalletConnectSessionActivity"
+            android:theme="@style/SplashTheme"
             android:label="WalletConnect Sessions" />
 
         <activity
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:name=".ui.TransactionSuccessActivity"
+            android:theme="@style/SplashTheme"
             android:label="Transaction Success" />
 
         <activity
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:name=".ui.AddCustomRPCNetworkActivity"
+            android:theme="@style/SplashTheme"
             android:label="@string/title_activity_add_custom_rpcnetwork"/>
 
         <activity
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:name=".ui.Erc1155Activity"
+            android:theme="@style/SplashTheme"
             android:label="ERC1155 Master Activity" />
 
         <activity
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:name=".ui.Erc1155AssetSelectActivity"
+            android:theme="@style/SplashTheme"
             android:label="ERC1155 Asset Selection" />
 
         <activity
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:name=".ui.Erc1155AssetDetailActivity"
+            android:theme="@style/SplashTheme"
             android:label="ERC1155 Asset Details" />
 
         <activity
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:name=".ui.Erc1155AssetListActivity"
+            android:theme="@style/SplashTheme"
             android:label="ERC1155 Asset Details" />
 
         <activity
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:name=".ui.TransferNFTActivity"
+            android:theme="@style/SplashTheme"
             android:label="NFT Transfer" />
 
         <activity
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:name=".ui.QRScanning.QRScanner"
+            android:theme="@style/SplashTheme"
             android:label="@string/qr_scanner" />
 
     </application>

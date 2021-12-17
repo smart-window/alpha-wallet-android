@@ -151,7 +151,7 @@
     <string name="link_valid_until">The MagicLink will be valid until %1$s %2$s</string>
     <string name="generate_pick_up_link">Generate a MagicLink</string>
     <string name="transfer_now">Transfer Now</string>
-    <string name="to">to</string>
+    <string name="to">To</string>
 
     <string-array name="filter_date">
         <item>Most Recent</item>
@@ -683,7 +683,7 @@
     <string name="message_authentication_failed">Authentication failed</string>
     <string name="tx_rejected">Transaction rejected (try using more gas)</string>
     <string name="from">from: %1$s</string>
-    <string name="from_op">from</string>
+    <string name="from_op">From</string>
     <string name="valueSymbol">%1$s %2$s</string>
     <string name="sent_to">to: %1$s</string>
     <string name="operation_definition" translatable="false">%1$s: %2$s</string>
@@ -853,4 +853,5 @@
     <string name="connected_to">Connected to</string>
     <string name="not_connected">Not Connected</string>
     <string name="online">Online</string>
+    <string name="todo">TODO</string>
 </resources>

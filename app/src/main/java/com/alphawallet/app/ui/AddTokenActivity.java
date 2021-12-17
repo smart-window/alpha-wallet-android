@@ -44,7 +44,9 @@ import com.alphawallet.app.widget.AWalletAlertDialog;
 import com.alphawallet.app.widget.ChainName;
 import com.alphawallet.app.widget.FunctionButtonBar;
 import com.alphawallet.app.widget.InputAddress;
-import com.alphawallet.app.widget.InputView;
+import com.alphawallet.app.widget.InputAddress1;
+
+import com.alphawallet.app.widget.InputView1;
 import com.alphawallet.app.widget.TokenIcon;
 import com.alphawallet.token.tools.ParseMagicLink;
 
@@ -78,14 +80,14 @@ public class AddTokenActivity extends BaseActivity implements AddressReadyCallba
     private TokenIcon chainIcon;
     private ChainName chainName;
 
-    public InputAddress inputAddressView;
-    public InputView symbolInputView;
-    public InputView decimalsInputView;
-    public InputView nameInputView;
+    public InputAddress1 inputAddressView;
+    public InputView1 symbolInputView;
+    public InputView1 decimalsInputView;
+    public InputView1 nameInputView;
+    private InputView1 tokenType;
     private String contractAddress;
     private NetworkInfo networkInfo;
     private QRResult currentResult;
-    private InputView tokenType;
     private ContractType contractType;
     private boolean zeroBalanceToken = false;
 
@@ -98,6 +100,8 @@ public class AddTokenActivity extends BaseActivity implements AddressReadyCallba
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_add_token);
+
+        EthereumNetworkBase.statusbarColorChange(AddTokenActivity.this,getColor(R.color.blue));
 
         setTitle(getString(R.string.title_add_token));
 
@@ -125,8 +129,7 @@ public class AddTokenActivity extends BaseActivity implements AddressReadyCallba
 
         contractType = null;
 
-        viewModel = new ViewModelProvider(this, addTokenViewModelFactory)
-                .get(AddTokenViewModel.class);
+        viewModel = new ViewModelProvider(this, addTokenViewModelFactory).get(AddTokenViewModel.class);
         viewModel.error().observe(this, this::onError);
         viewModel.result().observe(this, this::onSaved);
         viewModel.noContract().observe(this, this::onNoContractFound);

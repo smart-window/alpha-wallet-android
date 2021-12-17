@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/greyffive"
+    android:background="@color/greye5"
     android:orientation="vertical"
     android:paddingTop="6dp"
     android:paddingBottom="6dp">
@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:animateLayoutChanges="false"
-        android:background="@color/white"
+        android:background="@color/greye5"
         android:minHeight="100dp"
         android:paddingStart="6dp"
         android:paddingEnd="6dp">

@@ -19,10 +19,12 @@ import com.alphawallet.app.entity.EventMeta;
 import com.alphawallet.app.entity.TransactionMeta;
 import com.alphawallet.app.entity.Wallet;
 import com.alphawallet.app.entity.tokens.Token;
+import com.alphawallet.app.repository.EthereumNetworkBase;
 import com.alphawallet.app.repository.entity.RealmAuxData;
 import com.alphawallet.app.repository.entity.RealmTransaction;
 import com.alphawallet.app.repository.entity.RealmTransfer;
 import com.alphawallet.app.service.TokensService;
+import com.alphawallet.app.ui.SendActivity;
 import com.alphawallet.app.ui.widget.adapter.ActivityAdapter;
 import com.alphawallet.app.ui.widget.entity.TokenTransferData;
 
@@ -65,6 +67,7 @@ public class ActivityHistoryList extends LinearLayout
         loadingTransactions = findViewById(R.id.loading_transactions);
         noTxNotice = findViewById(R.id.layout_no_recent_transactions);
         this.context = context;
+
     }
 
     public void setupAdapter(ActivityAdapter adapter)

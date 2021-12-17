@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import com.alphawallet.app.R;
+import com.alphawallet.app.repository.EthereumNetworkBase;
 import com.alphawallet.app.viewmodel.BaseViewModel;
 
 public abstract class BaseActivity extends AppCompatActivity {
@@ -19,6 +20,7 @@ public abstract class BaseActivity extends AppCompatActivity {
             setSupportActionBar(toolbar);
             toolbar.setTitle(getTitle());
         }
+        EthereumNetworkBase.statusbarColorChange(this,getColor(R.color.blue));
         enableDisplayHomeAsUp();
         return toolbar;
     }

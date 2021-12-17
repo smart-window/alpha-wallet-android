@@ -43,8 +43,8 @@ import com.alphawallet.app.web3.entity.Web3Transaction;
 import com.alphawallet.app.widget.AWalletAlertDialog;
 import com.alphawallet.app.widget.ActionSheetDialog;
 import com.alphawallet.app.widget.FunctionButtonBar;
-import com.alphawallet.app.widget.InputAddress;
-import com.alphawallet.app.widget.InputAmount;
+import com.alphawallet.app.widget.InputAddress1;
+import com.alphawallet.app.widget.InputAmountSend;
 import com.alphawallet.app.widget.SignTransactionDialog;
 import com.alphawallet.token.entity.SalesOrderMalformed;
 import com.alphawallet.token.tools.Convert;
@@ -88,8 +88,8 @@ public class SendActivity extends BaseActivity implements AmountReadyCallback, S
 
     private QRResult currentResult;
 
-    private InputAmount amountInput;
-    private InputAddress addressInput;
+    private InputAmountSend amountInput;
+    private InputAddress1 addressInput;
     private String sendAddress;
     private String ensAddress;
     private BigDecimal sendAmount;
@@ -104,6 +104,7 @@ public class SendActivity extends BaseActivity implements AmountReadyCallback, S
         AndroidInjection.inject(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_send);
+        EthereumNetworkBase.statusbarColorChange(SendActivity.this,getColor(R.color.blue));
         toolbar();
 
         viewModel = new ViewModelProvider(this, sendViewModelFactory)

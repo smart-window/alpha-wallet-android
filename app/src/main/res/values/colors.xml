@@ -23,6 +23,7 @@
     <color name="holo_blue">#FF33b5e5</color>
 	<color name="tealish">#239ec5</color>
 	<color name="blue">#152173</color>
+
 	<color name="title_color">#333333</color>
 	<color name="button_colour">#69c800</color>
 	<color name="button_pressed_colour">#b4cd99</color>
@@ -38,7 +39,7 @@
 	<color name="button_disabled">#b4cd99</color>
 	<color name="greyf6">#f6f6f6</color>
 	<color name="greyaa">#2a2a2a</color>
-	<color name="greye5">#e5e5e5</color>
+	<color name="greye5">#F5F5F5</color>
 	<color name="greyc2">#c2c2c2</color>
 	<color name="greyf9">#f9f9f9</color>
 	<color name="grey76">#767676</color>
@@ -175,4 +176,5 @@
 	<color name="grey_8d">#8d8d8d</color>
     <color name="greyf3">#f3f4f5</color>
 	<color name="logo_grey">#F2F4F7</color>
+	<color name="logo_chain_name">#4C79CB</color>
 </resources>

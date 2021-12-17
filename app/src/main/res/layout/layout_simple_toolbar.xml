@@ -32,6 +32,6 @@
         android:singleLine="true"
         tools:text="Activity Title"
         android:textColor="@color/white"
-        android:textSize="20sp" />
+        android:textSize="@dimen/sp24" />
 
 </androidx.appcompat.widget.Toolbar>

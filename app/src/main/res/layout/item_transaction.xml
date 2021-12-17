@@ -5,10 +5,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/layout_background"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@color/white"
+    android:layout_height="70dp"
+    android:layout_marginStart="@dimen/dp18"
+    android:layout_marginEnd="@dimen/dp18"
+    android:layout_marginTop="@dimen/dp6"
+    android:layout_marginBottom="@dimen/dp6"
     android:orientation="horizontal"
     android:padding="@dimen/dp8"
+    android:background="@drawable/background_marketplace_event"
     android:minHeight="80dp">
 
     <com.alphawallet.app.widget.TokenIcon
@@ -91,19 +95,19 @@
             android:visibility="visible"
             tools:text="+1.0 ETH" />
 
-            <TextView
-                android:id="@+id/address"
-                android:layout_marginTop="@dimen/dp10"
-                android:layout_toStartOf="@id/supplimental"
-                android:layout_below="@id/value_layout"
-                android:layout_alignStart="@id/value_layout"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ellipsize="end"
-                android:fontFamily="@font/font_light"
-                tools:text="0x123456778 ... 3434"
-                android:textColor="@color/blue"
-                android:textSize="@dimen/sp12" />
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/value_layout"
+            android:layout_alignStart="@id/value_layout"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_toStartOf="@id/supplimental"
+            android:ellipsize="end"
+            android:fontFamily="@font/font_light"
+            android:textColor="@color/sub_blue"
+            android:textSize="@dimen/sp12"
+            tools:text="0x123456778 ... 3434" />
 
         <TextView
             android:id="@+id/text_tx_time"
@@ -111,14 +115,14 @@
             android:layout_height="wrap_content"
             android:layout_alignBottom="@id/address"
             android:layout_alignParentEnd="true"
-            android:visibility="visible"
-            android:fontFamily="@font/font_regular"
-            android:textColor="@color/blue"
             android:layout_gravity="center_vertical"
+            android:fontFamily="@font/font_regular"
             android:maxLines="1"
-            tools:text="11:53 pm"
             android:textAppearance="?attr/textAppearanceListItem"
-            android:textSize="12sp" />
+            android:textColor="@color/sub_blue"
+            android:textSize="12sp"
+            android:visibility="visible"
+            tools:text="11:53 pm" />
 
     </RelativeLayout>
 </LinearLayout>

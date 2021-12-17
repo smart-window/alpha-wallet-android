@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.view.View;
+import android.view.Window;
 
 import androidx.lifecycle.ViewModelProvider;
 
@@ -57,6 +58,7 @@ public class SplashActivity extends BaseActivity implements CreateWalletCallback
         splashViewModel.cleanAuxData(getApplicationContext());
 
         setContentView(R.layout.activity_splash);
+        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         splashViewModel.wallets().observe(this, this::onWallets);
         splashViewModel.createWallet().observe(this, this::onWalletCreate);
         splashViewModel.fetchWallets();
